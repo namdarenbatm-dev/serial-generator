@@ -1,0 +1,3563 @@
+==================== ThisWorkbook 1067
+Attribute VB_Name = "ThisWorkbook"
+Attribute VB_Base = "0{00020819-0000-0000-C000-000000000046}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = True
+Public Only As String
+
+
+
+
+Private Sub Workbook_Open()
+   'UserForm1.Show
+Application.OnKey "^+u", procedure:="exi"
+Application.OnKey "^+X", procedure:="tabaghe"
+
+
+Dim I As Integer
+'
+'strusername = appication.UserName
+'MsgBox "user: " & strusername
+
+'MsgBox VBA.Interaction.Environ$("UserName")
+
+On Error Resume Next
+
+t = 100
+
+If t <> 100 Then
+
+
+    
+
+
+MsgBox "فرمول منقضي شده است لطفا نسخه جديد را دريافت نماييد", vbOKOnly, "اخطار"
+Workbooks("Address.xlam").Close savechanges:=True
+
+
+
+
+
+Application.Quit
+End If
+
+
+'---تست
+'Dim aFile As String
+'
+'File_cmeli = "C:\Users\" + a + "\AppData\Roaming\Microsoft\Excel\XLSTART\*.xlam"
+'
+'If Len(Dir$(File_cmeli)) > 0 Then
+'Kill File_cmeli
+'End If
+'---
+
+
+
+End Sub
+
+
+
+
+==================== Sheet1 299
+Attribute VB_Name = "Sheet1"
+Attribute VB_Base = "0{00020820-0000-0000-C000-000000000046}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = True
+
+==================== Sheet2 299
+Attribute VB_Name = "Sheet2"
+Attribute VB_Base = "0{00020820-0000-0000-C000-000000000046}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = True
+
+==================== Sheet3 299
+Attribute VB_Name = "Sheet3"
+Attribute VB_Base = "0{00020820-0000-0000-C000-000000000046}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = True
+
+==================== Module79 3283
+Attribute VB_Name = "Module79"
+Function Brand_SerialCartKhan(Ceil As String)
+s = Trim(Ceil)
+L = Len(s)
+s2 = Mid(s, 1, 3)
+s = Mid(s, 1, 2)
+
+Application.Calculation = xlCalculationManual
+Application.ScreenUpdating = False
+
+
+If L = 7 Then
+    If s = "30" Then n = "Pax"
+    If s = "37" Then n = "Pax"
+    If s = "38" Then n = "Pax"
+    If s = "26" Then n = "Pax"
+End If
+
+
+If L = 8 Then
+    If s = "29" Then n = "Pax"
+    If s = "32" Then n = "Pax"
+    If s = "2K" Then n = "Pax"
+  
+    If s = "5C" Then n = "Pax"
+    If s = "51" Then n = "Pax"
+   
+    If s = "55" Then n = "Pax"
+    If s = "72" Then n = "Pax"
+    If s = "54" Then n = "Pax"
+    If s = "2L" Then n = "Pax"
+    If s = "25" Then n = "Pax"
+    If s = "3L" Then n = "Pax"
+    If s = "3D" Then n = "Pax"
+    If s = "3C" Then n = "Pax"
+    If s = "7L" Then n = "Pax"
+    If s = "7A" Then n = "Pax"
+    If s = "68" Then n = "Pax"
+    If s = "2k" Then n = "Pax"
+    If s = "2l" Then n = "Pax"
+    If s = "2M" Then n = "Pax"
+    If s = "2N" Then n = "Pax"
+    If s = "76" Then n = "Pax"
+    If s = "9A" Then n = "Pax"
+    
+    If s = "03" Then n = "Pax"
+    If s = "21" Then n = "Pax"
+    If s = "2D" Then n = "Pax"
+    If s = "30" Then n = "Pax"
+    If s = "36" Then n = "Pax"
+    If s = "38" Then n = "Pax"
+    If s = "3A" Then n = "Pax"
+    If s = "3E" Then n = "Pax"
+    If s = "3F" Then n = "Pax"
+    If s = "3G" Then n = "Pax"
+    If s = "3H" Then n = "Pax"
+    If s = "3J" Then n = "Pax"
+    If s = "3K" Then n = "Pax"
+    If s = "3M" Then n = "Pax"
+    If s = "3Q" Then n = "Pax"
+    If s = "3W" Then n = "Pax"
+    If s = "4A" Then n = "Pax"
+    If s = "4C" Then n = "Pax"
+    If s = "4D" Then n = "Pax"
+    If s = "4H" Then n = "Pax"
+    If s = "4K" Then n = "Pax"
+    If s = "4Z" Then n = "Pax"
+    If s = "5D" Then n = "Pax"
+    If s = "5F" Then n = "Pax"
+    If s = "6P" Then n = "Pax"
+    If s = "7D" Then n = "Pax"
+    If s = "88" Then n = "Pax"
+    If s = "89" Then n = "Pax"
+    If s = "8C" Then n = "Pax"
+    If s = "8E" Then n = "Pax"
+    If s = "D0" Then n = "Pax"
+    If s = "H0" Then n = "Pax"
+    If s = "H1" Then n = "Pax"
+    If s = "M0" Then n = "Pax"
+    If s = "P3" Then n = "Pax"
+    If s = "P3" Then n = "Pax"
+    
+    
+    
+    
+    If s = "2A" Then n = "Pax"
+    If s = "23" Then n = "Pax"
+    If s = "2R" Then n = "Pax"
+    If s = "2P" Then n = "Pax"
+    If s = "2H" Then n = "Pax"
+    If s = "2Z" Then n = "Pax"
+    If s = "26" Then n = "Pax"
+    If s = "2Q" Then n = "Pax"
+    If s = "2E" Then n = "Pax"
+    If s = "2C" Then n = "Pax"
+    If s = "45" Then n = "Pax"
+   
+    
+    
+End If
+
+If L = 10 Then
+    If s = "11" Then n = "Pax"
+    If s = "08" Then n = "Pax"
+
+   
+   
+   If s = "23" Then n = "Pax"
+
+    
+    
+    
+    
+End If
+
+If L = 11 Then
+    If s = "20" Then n = "Verifone"
+    If s = "21" Then n = "Verifone"
+    If s = "28" Then n = "Verifone"
+    If s = "32" Then n = "Verifone"
+    If s = "31" Then n = "Verifone"
+
+    
+
+    
+    
+    
+End If
+
+
+    
+    
+    
+    
+
+
+
+
+If Mid(s2, 1, 3) = "124" Then n = "Pax"
+Brand_SerialCartKhan = n
+
+Application.Calculation = xlCalculationAutomatic
+Application.ScreenUpdating = True
+
+End Function
+
+
+
+==================== Module1 2948
+Attribute VB_Name = "Module1"
+Function Model_PartCartKhan(Ceil As String)
+
+Application.Calculation = xlCalculationManual
+Application.ScreenUpdating = False
+
+n = Trim(Ceil)
+Select Case n
+Case Is = "A80-OPW-R64-01CC":  nh = "A80"
+
+Case Is = "D210-MOL-033-00EU":  nh = "D210"
+
+Case Is = "M25150336EUA":  nh = "Verifone"
+Case Is = "M25150336EUG":  nh = "Verifone"
+Case Is = "M25155336EUA":  nh = "Verifone"
+Case Is = "M25156336EUA":  nh = "Verifone"
+Case Is = "M25156934EUC":  nh = "Verifone"
+Case Is = "M25156936EUC":  nh = "Verifone"
+Case Is = "M252-650-03-":  nh = "Verifone"
+Case Is = "M252-652-03-":  nh = "Verifone"
+Case Is = "M252-653-03-":  nh = "Verifone"
+Case Is = "M252-723-17-":  nh = "Verifone"
+Case Is = "M252-753-03-":  nh = "Verifone"
+Case Is = "M252-753-0B-":  nh = "Verifone"
+Case Is = "M252-759-03-":  nh = "Verifone"
+Case Is = "M252-773-13-":  nh = "Verifone"
+Case Is = "M252-773-17-":  nh = "Verifone"
+Case Is = "M25652306TR1":  nh = "Verifone"
+Case Is = "M265-773-13-":  nh = "Verifone"
+Case Is = "M265-773-C3-":  nh = "Verifone"
+Case Is = "M282-773-C5-":  nh = "Verifone"
+
+
+Case Is = "PAX-000-031-00EU":  nh = "S900"
+Case Is = "PAX-0G0-031-00EU":  nh = "S910"
+Case Is = "PAX-M0L-031-00EU":  nh = "S800"
+Case Is = "Q80-M0A-R84-01LU":  nh = "Q80"
+Case Is = "Q80-M0L-R84-01LU":  nh = "Q80"
+Case Is = "Q80-M0L-R84-02LU":  nh = "Q80"
+Case Is = "Q80-M0L-R84-07LU":  nh = "Q80"
+Case Is = "Q80-MBA-R84-01LU":  nh = "Q80"
+Case Is = "S800-M0L-363-01NU":  nh = "S800"
+Case Is = "S800-M0L-363-02LU":  nh = "S800"
+Case Is = "S800-M0L-363-05LU":  nh = "S800"
+Case Is = "S800-M0L-363-07LU":  nh = "S800"
+Case Is = "S800-M0L-364-06LU":  nh = "S800"
+Case Is = "S800-MGL-363-01LU":  nh = "S800"
+Case Is = "S800M-MOL-181-01EU":  nh = "S800"
+Case Is = "S80-M00-031-02EU":  nh = "S80"
+Case Is = "S80-M0L-031-02EU":  nh = "S80"
+
+Case Is = "S80-MOL-031-02EU":  nh = "S80"
+Case Is = "S90-000-131-01EU":  nh = "S90"
+Case Is = "S900-0W0-363-01LE":  nh = "S900"
+Case Is = "S900-0W0-363-02LE":  nh = "S900"
+Case Is = "S900-0W0-363-06LU":  nh = "S900"
+Case Is = "S900-0WW-363-02LU":  nh = "S900"
+Case Is = "S90-0G0-131-01EU":  nh = "S90"
+Case Is = "S900M-MOL-291-01EU":  nh = "S900"
+Case Is = "S90-MOL-131-01EU":  nh = "S90"
+Case Is = "S910-MOL-":  nh = "S910"
+Case Is = "S920-0PW-R64-11LU":  nh = "S920"
+Case Is = "S920-0PW-R64-12LG":  nh = "S920"
+Case Is = "S920-0PW-R64-13LU":  nh = "S920"
+
+Case Is = "SP600":  nh = "SP600"
+Case Is = "SP600-J7G-C67GA60100":  nh = "SP600"
+Case Is = "SP600-J7G-C67GA60111":  nh = "SP600"
+Case Is = "SP600-J7G-T67GE60100":  nh = "SP600"
+Case Is = "SP600-J7G-T67GE601002":  nh = "SP600"
+Case Is = "SP600-J7G-T67GP60100":  nh = "SP600"
+
+
+
+
+
+Case Is = "D230-0AW-R85-01E0":  nh = "D230"
+
+
+
+
+
+
+
+End Select
+
+
+Model_PartCartKhan = nh
+Application.Calculation = xlCalculationAutomatic
+Application.ScreenUpdating = True
+
+End Function
+
+
+
+
+
+==================== Module2 5533
+Attribute VB_Name = "Module2"
+Function x_Model_Noskheh(Ceil As String)
+s = Trim(Ceil)
+L = Len(s)
+
+
+If s = "01.04" Then n = "Verifone"
+If s = "01.10" Then n = "Verifone"
+If s = "01.11" Then n = "Verifone"
+If s = "01.13" Then n = "Verifone"
+
+
+If s = "01.23" Then n = "S80"
+If s = "01.26" Then n = "S80"
+If s = "01.27" Then n = "S80"
+If s = "01.28" Then n = "S80"
+If s = "01.35" Then n = "S80"
+If s = "01.37" Then n = "Verifone"
+
+If s = "02.01E" Then n = "Verifone"
+
+If s = "02.01V" Then n = "Verifone"
+
+If s = "02.04P" Then n = "S80"
+If s = "02.09P" Then n = "S80"
+If s = "02.11P" Then n = "S80"
+If s = "02.13-1P" Then n = "S80"
+
+If s = "02.16-P" Then n = "S80"
+If s = "02.17-P" Then n = "S80"
+If s = "02.22-IRQ" Then n = "S90"
+If s = "02.23-P" Then n = "S80"
+If s = "02.24V" Then n = "Verifone"
+If s = "02.25-1P" Then n = "S80"
+If s = "02.25-P" Then n = "S80"
+If s = "02.26-PO" Then n = "S800"
+If s = "02.26V" Then n = "Verifone"
+If s = "02.27-1V" Then n = "Verifone"
+If s = "02.27V" Then n = "Verifone"
+If s = "02.28-1P" Then n = "S80"
+If s = "02.28-2" Then n = "Verifone"
+If s = "02.28-PO" Then n = "S800"
+If s = "02.28V" Then n = "Verifone"
+If s = "02.31-3P" Then n = "S800"
+If s = "02.32-2P" Then n = "S80"
+If s = "02.33" Then n = "Verifone"
+If s = "02.33V" Then n = "Verifone"
+If s = "02.342VF" Then n = "Verifone"
+If s = "02.34VF" Then n = "Verifone"
+If s = "02.351VF" Then n = "Verifone"
+If s = "02.36-1P" Then n = "S80"
+If s = "02.36-2P" Then n = "D210"
+If s = "02.378PM" Then n = "S80"
+If s = "02.379PM" Then n = "S80"
+If s = "02.37BPM" Then n = "S80"
+If s = "02.37DPM" Then n = "S80"
+If s = "02.37FPM" Then n = "S80"
+
+If s = "02.383PO" Then n = "Q80"
+If s = "02.384PM" Then n = "S800"
+If s = "02.386PM" Then n = "S800"
+If s = "02.389PM" Then n = "S800"
+If s = "02.38gPM" Then n = "S80"
+
+If s = "02.38iPM" Then n = "S80"
+If s = "02.38jPM" Then n = "S800"
+If s = "02.38KU" Then n = "Q80"
+If s = "02.395PO" Then n = "S900"
+If s = "02.397PO" Then n = "Q80"
+If s = "02.414PO" Then n = "Q80"
+If s = "02.41NL" Then n = "SP600"
+If s = "02.43.1NL" Then n = "SP600"
+
+If s = "02.46.1PO" Then n = "S800"
+If s = "02.461PO" Then n = "S800"
+If s = "02.471PO" Then n = "Q80"
+If s = "02.477PO" Then n = "Q80"
+If s = "02.481PO" Then n = "Q80"
+
+If s = "3E+53" Then n = "S90"
+
+'--- مخلوط
+If s = "01.18" Then n = "5100 or S80"
+If s = "01.22" Then n = "S80 or Sagem"
+If s = "01.24" Then n = "S80 or Sagem"
+If s = "01.25" Then n = "S80 or Sagem"
+If s = "01.29" Then n = "S80 or S90 or Verifone"
+If s = "01.36" Then n = "S80 or S90"
+If s = "02.01P" Then n = "S80 or S90"
+If s = "02.06P" Then n = "S80 or S90"
+If s = "02.08P" Then n = "S80 or S90"
+If s = "02.10P" Then n = "S80 or S90"
+If s = "02.12P" Then n = "S80 or S90"
+If s = "02.13P" Then n = "S80 or S90"
+If s = "02.14-7P" Then n = "S80 or S90"
+If s = "02.15P" Then n = "S80 or S800 or S90"
+If s = "02.19-P" Then n = "S80 or S90"
+If s = "02.20-P" Then n = "S80 or S90"
+If s = "02.22-P" Then n = "S80 or S800 or S90 or S900"
+If s = "02.24-P" Then n = "S80 or S800 or S90"
+If s = "02.26-P" Then n = "D210 or S80 or S800 or S90 or S900"
+If s = "02.27-P" Then n = "D210 or S80 or S800 or S90 or S900"
+If s = "02.28-4P" Then n = "D210 or S80 or S800 or S90"
+If s = "02.29-9P" Then n = "D210 or S80 or S800 or S90 or S900"
+If s = "02.29P" Then n = "D210 or S80 or S800 or S90 or S900"
+If s = "02.29-PO" Then n = "S800 or S900"
+If s = "02.30P" Then n = "D210 or S80 or S800 or S90 or S900"
+If s = "02.30-PO" Then n = "S800 or S900"
+If s = "02.31P" Then n = "D210 or S80 or S800 or S90"
+If s = "02.32P" Then n = "D210 or S80 or S800 or S90"
+If s = "02.33-3P" Then n = "D210 or S80 or S800 or S90 or S900"
+If s = "02.33-4P" Then n = "D210 or S80 or S800"
+If s = "02.343PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.344PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.346PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.349PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.35-6P" Then n = "D210 or S80 or S800 or S90 or S900 or S910"
+If s = "02.35-8P" Then n = "D210 or S80 or S800 or S90 or S900 or S910"
+If s = "02.35-9P" Then n = "D210 or S80 or S800 or S90 or S900 or S910"
+If s = "02.35-P" Then n = "D210 or S80 or S800 or S90 or S900 or S910"
+If s = "02.35PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.361PO" Then n = "Q80 or S800 or S920"
+If s = "02.36P" Then n = "D210 or S80 or S800 or S90 or S900 or S910"
+If s = "02.372PM" Then n = "D210 or S800"
+If s = "02.376PM" Then n = "S80 or S800 or S90"
+If s = "02.37PM" Then n = "D210 or S80 or S800 or S90 or S900 or S910"
+If s = "02.380NL" Then n = "SP50 or SP600"
+If s = "02.382PO" Then n = "Q80 or S800 or S900"
+If s = "02.38NL" Then n = "SP50 or SP600"
+If s = "02.38PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.39-IN" Then n = "DESK3500 or MOVE3500"
+If s = "02.39NL" Then n = "SP50 or SP600"
+If s = "02.39PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.40NL" Then n = "SP50 or SP600"
+If s = "02.40PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.41PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.42PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.43PO" Then n = "Q80 or S800 or S920"
+If s = "02.44PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.45PO" Then n = "Q80 or S800 or S900 or S920"
+If s = "02.46PO" Then n = "Q80 or S900"
+If s = "02.47PO" Then n = "Q80 or S800 or S900 or S920"
+
+
+
+
+
+
+x_Model_Noskheh = n
+End Function
+
+
+==================== Module3 3919
+Attribute VB_Name = "Module3"
+Function Model_SerialCartKhan(Ceil As String)
+s = Trim(Ceil)
+L = Len(s)
+s3 = Mid(s, 1, 4)
+s2 = Mid(s, 1, 3)
+s = Mid(s, 1, 2)
+
+Application.Calculation = xlCalculationManual
+Application.ScreenUpdating = False
+
+n = ""
+'------------------------------------------------
+If L = 7 Then
+    If s = "2K" Then n = "S80"
+    If s = "26" Then n = "S80"
+    If s = "54" Then n = "S800"
+    If s = "30" Then n = "S90"
+    If s = "37" Then n = "S90"
+    If s = "38" Then n = "S90"
+    If s = "3D" Then n = "S90"
+    If s = "55" Then n = "S900"
+    
+End If
+
+
+If L = 8 Then
+    If s = "51" Then n = "D210"
+    If s = "5C" Then n = "D210"
+    If s = "5F" Then n = "D210"
+
+    
+
+    
+'----PAX
+    If s = "25" Then n = "S80"
+    If s = "29" Then n = "S80"
+    If s = "2K" Then n = "S80"
+    If s = "2L" Then n = "S80"
+    If s = "2M" Then n = "S80"
+    If s = "2N" Then n = "S80"
+    If s = "3L" Then n = "S90"
+    If s = "6P" Then n = "S80"
+    If s = "7D" Then n = "S80"
+    If s = "89" Then n = "S80"
+    If s = "8E" Then n = "S80"
+    If s = "M0" Then n = "S80"
+    
+    
+    If s = "54" Then n = "S800"
+    
+    If s = "88" Then n = "S90"
+    If s = "8C" Then n = "S90"
+    If s = "D0" Then n = "S90"
+    If s = "H0" Then n = "S90"
+    If s = "H1" Then n = "S90"
+    If s = "P3" Then n = "S90"
+    If s = "03" Then n = "S90"
+    If s = "2D" Then n = "S90"
+    If s = "2M" Then n = "S80"
+    If s = "30" Then n = "S90"
+    If s = "32" Then n = "S90"
+    If s = "36" Then n = "S90"
+    If s = "38" Then n = "S90"
+    If s = "3A" Then n = "S90"
+    If s = "3C" Then n = "S90"
+    If s = "3D" Then n = "S90"
+    If s = "3E" Then n = "S90"
+    If s = "3F" Then n = "S90"
+    If s = "3G" Then n = "S90"
+    If s = "3H" Then n = "S90"
+    If s = "3J" Then n = "S90"
+    If s = "3K" Then n = "S90"
+    If s = "3M" Then n = "S90"
+    If s = "3Q" Then n = "S90"
+    If s = "3W" Then n = "S90"
+    If s = "4A" Then n = "S90"
+    If s = "4C" Then n = "S90"
+    If s = "4D" Then n = "S90"
+    If s = "4H" Then n = "S90"
+    If s = "4K" Then n = "S90"
+    If s = "4Z" Then n = "S90"
+    If s = "5D" Then n = "S90"
+
+    If s = "55" Then n = "S900"
+    
+    If s = "72" Then n = "S910"
+    If s = "7A" Then n = "S910"
+    
+    If s = "68" Then n = "S920"
+
+    
+    If s = "21" Then n = "Verifone"
+    
+    
+    
+    
+    If s = "2A" Then n = "D210"
+    If s = "23" Then n = "D210"
+    
+    
+    If s = "2C" Then n = "S80"
+    If s = "2E" Then n = "S80"
+     If s = "2H" Then n = "S80"
+      If s = "2P" Then n = "S80"
+       If s = "2Q" Then n = "S80"
+        If s = "2R" Then n = "S80"
+         If s = "2Z" Then n = "S80"
+         
+    If s = "45" Then n = "S90"
+
+     If s = "76" Then n = "S910"
+     
+     
+     
+     
+     
+     
+
+    
+    
+End If
+
+If L = 9 Then
+ 
+End If
+
+If L = 10 Then
+
+    If s = "12" Then n = "A80"
+
+    If s = "08" Then n = "Q80"   '-Pax
+
+    If s = "20" Then n = "Verifone"
+    
+
+     If s3 = "0800" Then n = "Q80"
+     
+     
+         
+
+  
+    
+    If s = "23" Then n = "D230"   '-Pax
+    
+    
+    
+    
+        
+    
+    
+End If
+
+If L = 11 Then
+
+    If s = "20" Then n = "Verifone"
+    If s = "21" Then n = "Verifone"
+    If s = "28" Then n = "Verifone"
+    If s = "31" Then n = "Verifone"
+    If s = "32" Then n = "Verifone"
+
+    
+    
+
+
+End If
+
+If L = 12 Then
+
+    If s = "J7" Then n = "SP600"
+
+    
+
+ 
+    
+    
+
+    
+    
+End If
+
+
+
+
+If L = 17 Then
+If s = "51" Then n = "D210"
+End If
+
+If L = 18 Then
+If s = "51" Then n = "D210"
+End If
+
+If L = 20 Then
+If s = "51" Then n = "D210"
+End If
+
+If L = 22 Then
+If s = "51" Then n = "D210"
+End If
+
+
+
+
+
+Model_SerialCartKhan = Trim(n)
+
+Application.Calculation = xlCalculationAutomatic
+Application.ScreenUpdating = True
+
+End Function
+
+
+
+
+==================== UserForm233 50014
+Attribute VB_Name = "UserForm233"
+Attribute VB_Base = "0{E9CE9C9F-ECF7-4609-8C14-7C96F92A64D9}{EA569700-717B-4DC2-89E0-652644253F97}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = False
+
+
+
+
+
+
+
+Private Sub CheckBox1_Click()
+
+End Sub
+
+Private Sub CheckBox16_Click()
+If CheckBox1.Value = True Then
+CheckBox1.Value = False
+Else
+CheckBox1.Value = True
+End If
+
+If CheckBox2.Value = True Then
+CheckBox2.Value = False
+Else
+CheckBox2.Value = True
+End If
+
+If CheckBox3.Value = True Then
+CheckBox3.Value = False
+Else
+CheckBox3.Value = True
+End If
+
+If CheckBox4.Value = True Then
+CheckBox4.Value = False
+Else
+CheckBox4.Value = True
+End If
+
+If CheckBox5.Value = True Then
+CheckBox5.Value = False
+Else
+CheckBox5.Value = True
+End If
+
+If CheckBox6.Value = True Then
+CheckBox6.Value = False
+Else
+CheckBox6.Value = True
+End If
+
+If CheckBox7.Value = True Then
+CheckBox7.Value = False
+Else
+CheckBox7.Value = True
+End If
+
+If CheckBox8.Value = True Then
+CheckBox8.Value = False
+Else
+CheckBox8.Value = True
+End If
+
+If CheckBox9.Value = True Then
+CheckBox9.Value = False
+Else
+CheckBox9.Value = True
+End If
+
+If CheckBox10.Value = True Then
+CheckBox10.Value = False
+Else
+CheckBox10.Value = True
+End If
+
+If CheckBox14.Value = True Then
+CheckBox14.Value = False
+Else
+CheckBox14.Value = True
+End If
+
+If CheckBox19.Value = True Then
+CheckBox19.Value = False
+Else
+CheckBox19.Value = True
+End If
+
+If CheckBox20.Value = True Then
+CheckBox20.Value = False
+Else
+CheckBox20.Value = True
+End If
+
+
+'If CheckBox11.Value = True Then
+'CheckBox11.Value = False
+'Else
+'CheckBox11.Value = True
+'End If
+
+If CheckBox12.Value = True Then
+CheckBox12.Value = False
+Else
+CheckBox12.Value = True
+End If
+
+'If CheckBox13.Value = True Then
+'CheckBox13.Value = False
+'Else
+'CheckBox13.Value = True
+'End If
+'
+'If CheckBox14.Value = True Then
+'CheckBox14.Value = False
+'Else
+'CheckBox14.Value = True
+'End If
+'
+'If CheckBox15.Value = True Then
+'CheckBox15.Value = False
+'Else
+'CheckBox15.Value = True
+'End If
+
+
+
+
+End Sub
+
+Private Sub CheckBoxall_Click()
+If CheckBoxall.Value = True Then
+CommandButton3.Visible = True
+CommandButton2.Visible = False
+ComboBox2.Enabled = False
+UserForm233.Height = 412
+CheckBox16.Visible = True
+CheckBox17.Visible = True
+Else
+CommandButton3.Visible = False
+CommandButton2.Visible = True
+ComboBox2.Enabled = True
+UserForm233.Height = 108
+CheckBox16.Visible = False
+CheckBox17.Visible = False
+CheckBox1.Value = False
+CheckBox2.Value = False
+CheckBox3.Value = False
+CheckBox4.Value = False
+CheckBox5.Value = False
+CheckBox6.Value = False
+CheckBox7.Value = False
+CheckBox8.Value = False
+CheckBox9.Value = False
+CheckBox10.Value = False
+CheckBox11.Value = False
+CheckBox12.Value = False
+CheckBox13.Value = False
+CheckBox14.Value = False
+CheckBox15.Value = False
+
+End If
+
+
+End Sub
+
+Private Sub ComboBox2_Change()
+'--- انتخاب عکس
+img_saman.Visible = False
+img_refah.Visible = False
+img_sepah.Visible = False
+img_saderat.Visible = False
+img_moasseh.Visible = False
+img_sayer.Visible = False
+img_toseeh.Visible = False
+img_khavarmianeh.Visible = False
+img_ansar.Visible = False
+img_resalat.Visible = False
+img_maskan.Visible = False
+img_keshavarzi.Visible = False
+img_day.Visible = False
+img_shahr.Visible = False
+'img_ayandeh.Visible = False
+
+If ComboBox2.Value = "سامان" Then img_saman.Visible = True
+If ComboBox2.Value = "رفاه" Then img_refah.Visible = True
+If ComboBox2.Value = "سپه" Then img_sepah.Visible = True
+If ComboBox2.Value = "صادرات" Then img_saderat.Visible = True
+If ComboBox2.Value = "موسسه اعتباري توسعه" Then img_moasseh.Visible = True
+If ComboBox2.Value = "سايربانکها" Then img_sayer.Visible = True
+If ComboBox2.Value = "توسعه تعاون" Then img_toseeh.Visible = True
+If ComboBox2.Value = "خاورميانه" Then img_khavarmianeh.Visible = True
+If ComboBox2.Value = "انصار" Then img_ansar.Visible = True
+If ComboBox2.Value = "رسالت" Then img_resalat.Visible = True
+If ComboBox2.Value = "مسکن" Then img_maskan.Visible = True
+If ComboBox2.Value = "کشاورزي" Then img_keshavarzi.Visible = True
+If ComboBox2.Value = "پرديس رفاه" Then img_refah.Visible = True
+If ComboBox2.Value = "بانک دي" Then img_day.Visible = True
+If ComboBox2.Value = "بانک شهر" Then img_shahr.Visible = True
+'If ComboBox2.Value = "آ" + ChrW(1740) + "نده" Then img_ayandeh.Visible = True
+'if combobox2.value = "SMT" '15
+'---
+End Sub
+
+Private Sub CommandButton1_Click()
+'Workbooks.Add
+
+Dim a(50), b(50), s, ss, sh, nh As String
+Dim I, j, K, t, lastc, lastr As Integer
+
+Application.ScreenUpdating = False
+On Error Resume Next
+
+'Worksheets(1).Select
+
+'--- Table > range
+'Dim rList As Range
+'sr = ActiveSheet.ListObjects(1).Name
+'If sr <> "" Then
+'With Worksheets(1).ListObjects(ActiveSheet.ListObjects(1).Name)
+'    ActiveSheet.ListObjects(sr).TableStyle = "TableStyleLight9"
+'    Set rList = .Range
+'    .Unlist                           ' convert the table back to a range
+'End With
+'
+'With rList
+''    .Interior.ColorIndex = xlColorIndexNone
+'    .Font.ColorIndex = xlColorIndexAutomatic
+'    .Borders.LineStyle = xlLineStyleNone
+'        Selection.End(xlUp).Select
+'    Selection.End(xlToLeft).Select
+'    Rows("1:1").Select
+'    Selection.AutoFilter
+'End With
+'End If
+''---
+
+
+
+'--- انتخاب بانک
+If ComboBox2.Value = "" Then
+MsgBox "لطفا نام بانک را انتخاب نماييد"
+ComboBox2.SetFocus
+Else
+test = 0
+s_name = ComboBox2.Value
+s_bank = ""
+
+If s_name = "سامان" Then
+s_bank = "saman"
+End If
+If s_name = "رفاه" Then
+s_bank = "refah"
+End If
+If s_name = "سپه" Then
+s_bank = "sepah"
+End If
+If s_name = "صادرات" Then
+s_bank = "saderat"
+End If
+If s_name = "موسسه اعتباري توسعه" Then
+s_bank = "cid"
+End If
+If s_name = "سايربانکها" Then
+s_bank = "other"
+End If
+If s_name = "توسعه تعاون" Then
+s_bank = "ttbank"
+End If
+If s_name = "خاورميانه" Then
+s_bank = "meb"
+End If
+If s_name = "انصار" Then
+s_bank = "ansar"
+End If
+If s_name = "رسالت" Then
+s_bank = "resalat"
+End If
+If s_name = "مسکن" Then
+s_bank = "maskan"
+End If
+If s_name = "کشاورزي" Then
+s_bank = "keshavarzi"
+End If
+If s_name = "پرديس رفاه" Then
+s_bank = "pardis"
+End If
+If s_name = "بانک دي" Then
+s_bank = "Day"
+End If
+If s_name = "بانک شهر" Then
+s_bank = "shahr"
+End If
+'If s_name = "SMT" Then
+'s_bank = "shahr"
+'End If
+'If s_name = "آ" + ChrW(1740) + "نده" Then
+'s_bank = "farda"
+'End If
+
+End If
+
+'---
+
+If s_bank = "" Then
+'MsgBox "نوع بانک را انتخاب نماييد"
+
+Else
+
+
+'---شناسه
+For I = 1 To 150
+sh = Cells(1, I).Value
+s = Cells(1, I).address
+
+s2 = s
+s = Split(s, "$")(1)
+sss = s
+s = s + ":" + s
+If sh = "شناسه" Then
+'Test = 100
+I = 150
+'        Range(s2).Select
+'    With Selection.Font
+'        .Color = -16776961
+'        .TintAndShade = 0
+'    End With
+    
+'    Columns(s).Select
+'    Selection.Copy
+'    Sheets(Sheets.Count).Select
+'    Range("B1").Select
+'    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks:=False, Transpose:=False
+'    I = lastc
+End If
+
+Next I
+
+sh = "1"
+Set ws = Worksheets(ActiveSheet.Name)
+With ws
+    I = Val(sh)
+    RowNumber = I
+
+        If Sheets(ActiveSheet.Name).Cells(RowNumber, .Columns.Count) <> vbNullString Then
+'        Set LastCell = .Cells(RowNumber, .Columns.Count)
+        Set LastCell = Sheets(ActiveSheet.Name).Cells(RowNumber, Sheets(ActiveSheet.Name).Columns.Count)
+        LastCellColumnNumber = LastCell.Column
+    Else
+        Set LastCell = Sheets(ActiveSheet.Name).Cells(RowNumber, Sheets(ActiveSheet.Name).Columns.Count).End(xlToLeft)
+        LastCellColumnNumber = LastCell.Column
+    End If
+End With
+lastc = LastCellColumnNumber
+
+sn1 = sss
+With Sheets(1)
+lastr = Sheets(ActiveSheet.Name).Cells(Sheets(ActiveSheet.Name).Rows.Count, sn1).End(xlUp).Row
+End With
+
+
+Application.DisplayAlerts = False
+'
+'For I = 1 To Sheets.Count - 1
+'    Sheets(Sheets.Count).Select
+'    ActiveWindow.SelectedSheets.Delete
+'Next I
+
+
+
+    Sheets.Add After:=Sheets(Sheets.Count)
+    Sheets(Sheets.Count).Select
+    Sheets(Sheets.Count).Name = "فايل تنظيم شيرپوينت" + Str(Sheets.Count)
+    Range("A1").Select
+
+Application.DisplayAlerts = True
+If Sheets.Count = 2 Then
+'Sheets(1).Select
+num = 1
+Else
+For I = 1 To Sheets.Count
+s = Sheets(I).Name
+s2 = Trim(Mid(s, 1, 13))
+If s2 = "تعريف ترمينال" Then
+num = I
+End If
+    
+Next I
+
+End If
+ 
+ 
+Sheets(num).Select
+'---شناسه
+For I = 1 To lastc
+sh = Cells(1, I).Value
+s = Cells(1, I).address
+s2 = s
+s = Split(s, "$")(1)
+s = s + ":" + s
+If sh = "شناسه" Then
+'Test = 100
+        Range(s2).Select
+'    With Selection.Font
+'        .Color = -16776961
+'        .TintAndShade = 0
+'    End With
+    
+    Columns(s).Select
+    Selection.Copy
+    Sheets(Sheets.Count).Select
+    Range("B1").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks:=False, Transpose:=False
+    I = lastc
+End If
+
+Next I
+
+
+'sr = sr
+'If sr <> "" Then
+'For I = 2 To lastc
+'s = "A" + Trim(Str(I))
+'If Range(s).Interior.Color = RGB(220, 230, 241) Then
+'If Range(s).Interior.Color = 15853276 Then
+
+'    Range(s).Select
+'    With Selection.Interior
+'        .Pattern = xlNone
+'        .TintAndShade = 0
+'        .PatternTintAndShade = 0
+'    End With
+'End If
+'Next I
+
+'End If
+
+
+
+'---
+
+
+
+
+'---شماره ترمينال
+test = 0
+Sheets(num).Select
+For I = 1 To lastc
+sh = Cells(1, I).Value
+s = Cells(1, I).address
+s2 = s
+s = Split(s, "$")(1)
+sss2 = s
+s = s + ":" + s
+
+If sh = "شماره ترم" + ChrW(1740) + "نال" Then
+'Test = 100
+        Range(s2).Select
+'    With Selection.Font
+'        .Color = -16776961
+'        .TintAndShade = 0
+'    End With
+    
+    Columns(s).Select
+    Selection.Copy
+    Sheets(Sheets.Count).Select
+    Range("C1").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks:=False, Transpose:=False
+    I = lastc
+End If
+'If I = lastc Then
+'If Test <> 100 Then
+'Sheets(Sheets.Count).Range("C1").Value = "شماره ترم" + ChrW(1740) + "نال"
+'End If
+'End If
+Next I
+'---
+
+
+
+'--- نام فروشگاه- فارسي
+test = 0
+Sheets(num).Select
+For I = 1 To lastc
+sh = Cells(1, I).Value
+s = Cells(1, I).address
+s2 = s
+s = Split(s, "$")(1)
+s = s + ":" + s
+
+If sh = "فروشگاه " Then
+'Test = 100
+        Range(s2).Select
+'    With Selection.Font
+'        .Color = -16776961
+'        .TintAndShade = 0
+'    End With
+
+    Columns(s).Select
+    Selection.Copy
+    Sheets(Sheets.Count).Select
+    Range("D1").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks:=False, Transpose:=False
+    I = lastc
+End If
+'If I = lastc Then
+'If Test <> 100 Then
+'Sheets(Sheets.Count).Range("O1").Value = "فروشگاه "
+'End If
+'End If
+Next I
+'---
+
+
+'---خطاها
+
+test = 0
+Sheets(num).Select
+For I = 1 To lastc
+sh = Cells(1, I).Value
+s = Cells(1, I).address
+s2 = s
+s = Split(s, "$")(1)
+sss = s
+s = s + ":" + s
+
+If sh = "خطاها" Then
+'Test = 100
+        Range(s2).Select
+'    With Selection.Font
+'        .Color = -16776961
+'        .TintAndShade = 0
+'    End With
+    
+    Columns(s).Select
+    Selection.Copy
+    Sheets(Sheets.Count).Select
+    Range("E1").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks:=False, Transpose:=False
+    I = lastc
+End If
+'If I = lastc Then
+'If Test <> 100 Then
+'Sheets(Sheets.Count).Range("C1").Value = "شماره ترم" + ChrW(1740) + "نال"
+'End If
+'End If
+Next I
+'---
+
+'--- اضافه کردن فايل هاي اضافه شده
+Sheets(num).Select
+For I = 2 To lastr
+s = sss + Trim(Str(I))
+s2 = sss2 + Trim(Str(I))
+If Range(s2).Value <> "" Then
+If IsNumeric(Range(s2).Value) Then
+t = "T"
+Else
+t = "F"
+End If
+End If
+If t = "T" Then
+Range(s).Value = "1"
+t = ""
+End If
+
+Next I
+
+
+
+Sheets(Sheets.Count).Select
+'---
+
+'--- وارد کردن نام بانک
+For I = 2 To lastr
+s = "A" + Trim(Str(I))
+Range(s).Value = s_bank
+Next I
+'---
+
+
+'--- نام گزاري ستون ها
+Sheets(Count).Select
+Range("a1").Value = "Bank"
+Range("b1").Value = "ListID"
+Range("c1").Value = "TerminalNumber"
+Range("d1").Value = "StoreName"
+'---
+
+'--- مرتب کردن جهت حذف
+'    Range("E1").Value = "رديف"
+'    Range("E2").Value = 1
+'    Range("E3").Value = 2
+'    Range("E2:E3").Select
+'    s = "E2:E" + Trim(Str(lastr))
+'    Selection.AutoFill Destination:=Range(s)
+'    Range(s).Select
+'    Selection.End(xlUp).Select
+'    Rows("1:1").Select
+'    Range("E1").Activate
+'    Selection.AutoFilter
+'    Selection.AutoFilter
+'    Range("E1").Select
+'
+'    ActiveWorkbook.Sheets(Sheets.Count).AutoFilter.Sort.SortFields.Clear
+'    ActiveWorkbook.Sheets(Sheets.Count).AutoFilter.Sort.SortFields.Add _
+'        Key:=Range("E1"), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption _
+'        :=xlSortNormal
+'    With ActiveWorkbook.Sheets(Sheets.Count).AutoFilter.Sort
+'        .Header = xlYes
+'        .MatchCase = False
+'        .Orientation = xlTopToBottom
+'        .SortMethod = xlPinYin
+'        .Apply
+'    End With
+'    Columns("E:E").Select
+'    Selection.Delete Shift:=xlToLeft
+'    Range("A1").Select
+
+
+
+
+    Rows("1:1").Select
+    Range("C1").Activate
+    Selection.AutoFilter
+    ActiveWorkbook.Sheets(Sheets.Count).AutoFilter.Sort.SortFields. _
+        Clear
+    ActiveWorkbook.Sheets(Sheets.Count).AutoFilter.Sort.SortFields. _
+        Add Key:=Range("C1"), SortOn:=xlSortOnValues, Order:=xlAscending, _
+        DataOption:=xlSortNormal
+    With ActiveWorkbook.Sheets(Sheets.Count).AutoFilter.Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+'---
+
+
+'--- حذف فاصله و مرجوعي
+
+For I = 2 To lastr
+ss = "C" + Trim(Str(I))
+If Range(ss).Value = "" Then
+s = Trim(Str(I)) + ":" + Trim(Str(lastr))
+    Rows(s).Select
+    Selection.Delete Shift:=xlUp
+'    Range(ss).Activate
+End If
+Next I
+
+For I = 2 To lastr
+ss = "C" + Trim(Str(I))
+If IsNumeric(Range(ss).Value) Then
+s = "T"
+Else
+s = "F"
+End If
+If s = "F" Then
+
+s2 = Trim(Str(I)) + ":" + Trim(Str(lastr))
+    Rows(s2).Select
+    Selection.Delete Shift:=xlUp
+'    Range(ss).Activate
+End If
+'End If
+Next I
+
+    Rows("1:1").Select
+    Selection.AutoFilter
+
+''---
+'--- حذف خطاها
+For I = 2 To lastr
+ss = "E" + Trim(Str(I))
+If Range(ss).Value = "1" Or Range(ss).Value = 1 Then
+s = Trim(Str(I)) + ":" + Trim(Str(I))
+    Rows(s).Select
+    Selection.Delete Shift:=xlUp
+I = I - 1
+'    Range(ss).Activate
+End If
+Next I
+
+Columns("E:E").Select 'حذف ستون خطا
+Selection.Delete Shift:=xlToLeft
+Range("A1").Select
+
+'---
+
+
+
+'--- فيلتر گزاري و مرتب کردن
+
+    Rows("1:1").Select
+    Range("C1").Activate
+    Application.CutCopyMode = False
+    Selection.AutoFilter
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlCenter
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlCenter
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Cells.Select
+    Cells.EntireColumn.AutoFit
+    Rows("1:1").Select
+    Selection.Font.Bold = True
+    
+    Range("A1").Select
+'---
+
+'--- مرتب کردن بر اساس شناسه
+    ActiveWorkbook.Sheets(Sheets.Count).AutoFilter.Sort.SortFields.Clear
+    ActiveWorkbook.Sheets(Sheets.Count).AutoFilter.Sort.SortFields.Add _
+        Key:=Range("B1"), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption _
+        :=xlSortNormal
+    With ActiveWorkbook.Sheets(Sheets.Count).AutoFilter.Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+
+'---
+
+
+
+
+
+Application.DisplayAlerts = True
+Unload Me
+
+End If
+
+ActiveSheet.move
+Sheets(1).Name = "شيرپوينت " + s_name + " "
+
+
+
+s = Sheets(1).Name
+Range("A1000000").Value = "=m2s(today())"
+s2 = Range("A1000000").Value
+Range("A1000000").Value = ""
+nh = ""
+nh2 = ""
+For I = 1 To Len(s2)
+nh = Mid(s2, I, 1)
+If nh <> "/" Then nh2 = nh2 + nh
+
+Next I
+
+nh = Mid(nh2, 3, Len(nh2))
+s = s + " " + nh
+
+'Dim strfolder As String
+'strfolder = "Desktop"
+'Application.Dialogs(xlDialogSaveAs).Show(arg1:= s,arg2:=strfolder)
+Application.Dialogs(xlDialogSaveAs).Show s
+'ActiveWorkbook.SaveAs Filename:=s
+
+
+Application.DisplayAlerts = True
+
+    
+
+End Sub
+
+
+
+
+Private Sub CommandButton2_Click()
+'Workbooks.Add
+On Error Resume Next
+Dim a(50), b(50), s, ss, sh, nh As String
+Dim I, j, K, t, lastc, lastr As Integer
+
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+sheetc = Sheets.Count
+For I = 1 To sheetc - 1
+Sheets(I).Select
+ActiveWindow.SelectedSheets.Delete
+'I = I - 1
+Next I
+Sheets(1).Name = "Sheet1"
+
+
+'--- انتخاب بانک
+If ComboBox2.Value = "" Then
+MsgBox "لطفا نام بانک را انتخاب نماييد"
+ComboBox2.SetFocus
+Else
+test = 0
+s_name = ComboBox2.Value
+s_bank = ""
+
+If s_name = "سامان" Then
+s_bank = "saman"
+End If
+If s_name = "رفاه" Then
+s_bank = "refah"
+End If
+If s_name = "سپه" Then
+s_bank = "sepah"
+End If
+If s_name = "صادرات" Then
+s_bank = "saderat"
+End If
+If s_name = "موسسه اعتباري توسعه" Then
+s_bank = "cid"
+End If
+If s_name = "سايربانکها" Then
+s_bank = "other"
+End If
+If s_name = "توسعه تعاون" Then
+s_bank = "ttbank"
+End If
+If s_name = "خاورميانه" Then
+s_bank = "meb"
+End If
+If s_name = "انصار" Then
+s_bank = "ansar"
+End If
+If s_name = "رسالت" Then
+s_bank = "resalat"
+End If
+If s_name = "مسکن" Then
+s_bank = "maskan"
+End If
+If s_name = "کشاورزي" Then
+s_bank = "keshavarzi"
+End If
+If s_name = "پرديس رفاه" Then
+s_bank = "pardis"
+End If
+If s_name = "بانک دي" Then
+s_bank = "Day"
+End If
+If s_name = "بانک شهر" Then
+s_bank = "shahr"
+End If
+'If s_name = "SMT" Then
+'s_bank = "shahr"
+'End If
+If s_name = "آ" + ChrW(1740) + "نده" Then
+s_bank = "farda"
+End If
+
+End If
+
+'---
+
+If s_bank = "" Then
+'MsgBox "نوع بانک را انتخاب نماييد"
+End If
+'---- saman
+If s_bank = "saman" Then
+Call Saman
+End If
+'---
+
+'---- REFAH
+If s_bank = "refah" Then
+Call refah
+End If
+'---
+
+'---- Sepah
+If s_bank = "sepah" Then
+Call sepah
+End If
+'---
+
+'---- cid
+If s_bank = "cid" Then
+Call cid
+End If
+'---
+
+'---- other
+If s_bank = "other" Then
+Call other
+End If
+'---
+
+'---- ttbank
+If s_bank = "ttbank" Then
+Call ttbank
+End If
+'---
+
+'---- meb
+If s_bank = "meb" Then
+Call meb
+End If
+'---
+
+'---- ansar
+If s_bank = "ansar" Then
+Call ansar
+End If
+'---
+
+'---- resalat
+If s_bank = "resalat" Then
+Call resalat
+End If
+'---
+
+'---- saderat
+If s_bank = "saderat" Then
+Call saderat
+End If
+'---
+
+'---- maskan
+If s_bank = "maskan" Then
+Call maskan
+End If
+'---
+
+'---- keshavarzi
+If s_bank = "keshavarzi" Then
+Call keshavarzi
+End If
+'---
+
+'---- pardis
+If s_bank = "pardis" Then
+Call pardis
+End If
+'---
+
+'---- Day
+If s_bank = "Day" Then
+Call day
+End If
+'---
+
+'---- shahr
+If s_bank = "shahr" Then
+Call shahr
+End If
+'---
+ActiveWindow.TabRatio = 0.81
+Application.DisplayAlerts = False
+For j = 1 To Sheets.Count
+If Mid(Sheets(j).Name, 1, 2) = "Sh" Then
+Sheets(j).Delete
+End If
+Next j
+'Sheets("sheet1").Delete
+Application.DisplayAlerts = True
+Application.ScreenUpdating = True
+
+For j = 1 To Sheets.Count
+If Mid(Sheets(j).Name, 1, 2) = "Sh" Then
+Sheets(j).Delete
+End If
+Next j
+
+'--- UnlinkList
+On Error Resume Next
+Dim wrksht As Worksheet
+Dim objListObj As ListObject
+For I = 1 To Sheets.Count
+Set wrksht = ActiveWorkbook.Worksheets(I)
+Set objListObj = wrksht.ListObjects(1)
+objListObj.Unlink
+Next I
+'---
+
+'--- call sep1
+If OptionButtonall.Value = False Then
+On Error Resume Next
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+'For K = 1 To Sheets.Count
+'Sheets(K).Select
+sh = "1"
+Set ws = Worksheets(ActiveSheet.Name)
+With ws
+    I = Val(sh)
+    RowNumber = I
+
+        If Sheets(ActiveSheet.Name).Cells(RowNumber, .Columns.Count) <> vbNullString Then
+'        Set LastCell = .Cells(RowNumber, .Columns.Count)
+        Set LastCell = Sheets(ActiveSheet.Name).Cells(RowNumber, Sheets(ActiveSheet.Name).Columns.Count)
+        LastCellColumnNumber = LastCell.Column
+    Else
+        Set LastCell = Sheets(ActiveSheet.Name).Cells(RowNumber, Sheets(ActiveSheet.Name).Columns.Count).End(xlToLeft)
+        LastCellColumnNumber = LastCell.Column
+    End If
+End With
+lastc = LastCellColumnNumber
+
+sn1 = "A"
+With Sheets(1)
+lastr = Sheets(ActiveSheet.Name).Cells(Sheets(ActiveSheet.Name).Rows.Count, sn1).End(xlUp).Row
+End With
+
+
+
+
+
+'--- سوئيچ
+For I = 1 To lastc
+sh = Cells(1, I).Value
+s = Cells(1, I).address
+s2 = s
+s = Split(s, "$")(1)
+s3 = s
+s = s + ":" + s
+If sh = "سوئ" + ChrW(1740) + "چ" Then
+For j = 2 To lastr
+s4 = s3 + Trim(Str(j))
+'s = Range(s4).Value
+'s = OptionButton1.Caption
+op = Range(s4).Value
+If Mid(op, 1, 1) = "S" Then
+op = "s" + Mid(op, 2, Len(op))
+End If
+
+If OptionButton1.Value = True Then
+If op = OptionButton2.Caption Then
+s = Trim(Str(j)) + ":" + Trim(Str(j))
+Rows(s).Select
+Selection.Delete Shift:=xlUp
+j = j - 1
+End If
+End If
+
+
+If OptionButton2.Value = True Then
+If op = OptionButton1.Caption Then
+s = Trim(Str(j)) + ":" + Trim(Str(j))
+Rows(s).Select
+Selection.Delete Shift:=xlUp
+Range("A1").Select
+j = j - 1
+End If
+End If
+
+Next j
+End If
+Next I
+'Next K
+
+
+End If
+'---
+If Trim(Range("A1").Value) = "ID" Then
+Columns("A:A").Select
+Selection.Delete Shift:=xlToLeft
+End If
+Range("A1").Select
+
+Application.DisplayAlerts = True
+Application.ScreenUpdating = True
+
+'--- save file
+If ComboBox2.Value <> "" Then
+s = "تعريف ترمينال"
+Range("A1000000").Value = "=m2s(today())"
+s2 = Range("A1000000").Value
+Range("A1000000").Value = ""
+nh = ""
+nh2 = ""
+For I = 1 To Len(s2)
+nh = Mid(s2, I, 1)
+If nh <> "/" Then nh2 = nh2 + nh
+
+Next I
+
+nh = Mid(nh2, 3, Len(nh2))
+s = s + " " + nh
+
+Application.Dialogs(xlDialogSaveAs).Show s
+End If
+'---
+
+
+
+End Sub
+
+Private Sub CommandButton3_Click()
+On Error Resume Next
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+
+Dim am(20), bm(20) As String
+t = 0
+
+
+sheetc = Sheets.Count
+For I = 1 To sheetc - 1
+Sheets(I).Select
+ActiveWindow.SelectedSheets.Delete
+'I = I - 1
+Next I
+Sheets(1).Name = "Sheet1"
+
+
+
+'---- meb
+If CheckBox7.Value = True Then
+Call meb
+t = 100
+End If
+'---
+
+'---- postbank
+If CheckBox19.Value = True Then
+Call postbank
+t = 100
+End If
+'---
+
+'---- ertebatfarda
+If CheckBox20.Value = True Then
+Call ertebatfarda
+t = 100
+End If
+'---
+
+'---- BankDay
+If CheckBox14.Value = True Then
+Call bankday
+t = 100
+End If
+'---
+
+'---- cid
+If CheckBox4.Value = True Then
+Call cid
+t = 100
+End If
+'---
+
+'---- ttbank
+If CheckBox6.Value = True Then
+Call ttbank
+t = 100
+End If
+'---
+
+'---- ansar
+If CheckBox8.Value = True Then
+Call ansar
+t = 100
+End If
+'---
+
+'---- keshavarzi
+If CheckBox12.Value = True Then
+Call keshavarzi
+t = 100
+End If
+'---
+
+'---- sepah
+If CheckBox3.Value = True Then
+Call sepah
+t = 100
+End If
+'---
+
+'---- resalat
+If CheckBox9.Value = True Then
+Call resalat
+t = 100
+End If
+'---
+
+'---- other
+If CheckBox5.Value = True Then
+Call other
+t = 100
+End If
+'---
+
+'---- saderat
+If CheckBox10.Value = True Then
+Call saderat
+t = 100
+End If
+'---
+
+'---- REFAH
+If CheckBox2.Value = True Then
+Call refah
+t = 100
+End If
+'---
+
+'---- saman
+If CheckBox1.Value = True Then
+Call Saman
+t = 100
+End If
+'---
+
+
+'---- maskan
+If CheckBox11.Value = True Then
+Call maskan
+t = 100
+End If
+'---
+
+'---- pardis
+If CheckBox13.Value = True Then
+Call pardis
+t = 100
+End If
+'---
+
+''---- day
+'If CheckBox14.Value = True Then
+'Call day
+'t = 100
+'End If
+''---
+
+'---- shahr
+If CheckBox15.Value = True Then
+Call shahr
+t = 100
+End If
+'---
+Application.DisplayAlerts = False
+For j = 1 To Sheets.Count
+If Mid(Sheets(j).Name, 1, 2) = "Sh" Then
+Sheets(j).Delete
+End If
+Next j
+'Sheets("sheet1").Delete
+Application.DisplayAlerts = True
+Application.ScreenUpdating = True
+ActiveWindow.TabRatio = 0.81
+
+'--- حذف موارد خالي
+If CheckBox17.Value = True Then
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+sheetc = Sheets.Count
+If sheetc > 1 Then
+For I = 1 To sheetc
+Sheets(I).Select
+Range("2:2").Select
+If Application.CountA(ActiveCell.EntireRow) = 0 Then
+If sheetc > 1 Then
+ActiveWindow.SelectedSheets.Delete
+End If
+If sheetc = 1 Then Exit For
+I = I - 1
+End If
+Range("A1").Select
+sheetc = Sheets.Count
+If I + 1 > Sheets.Count Then Exit For
+Next I
+End If
+Application.DisplayAlerts = True
+Application.ScreenUpdating = True
+End If
+'---
+Call UnlinkList
+
+If OptionButtonall.Value = False Then Call sep1
+
+Application.DisplayAlerts = False
+Application.ScreenUpdating = False
+'---آمار
+s2 = "آمار در انتظار تعريف ترمينال:" + Chr(13)
+'s2 = ""
+t2 = 0
+For j = 1 To Sheets.Count
+Sheets(j).Select
+
+
+sh = "1"
+Set ws = Worksheets(ActiveSheet.Name)
+With ws
+    I = Val(sh)
+    RowNumber = I
+
+        If Sheets(ActiveSheet.Name).Cells(RowNumber, .Columns.Count) <> vbNullString Then
+'        Set LastCell = .Cells(RowNumber, .Columns.Count)
+        Set LastCell = Sheets(ActiveSheet.Name).Cells(RowNumber, Sheets(ActiveSheet.Name).Columns.Count)
+        LastCellColumnNumber = LastCell.Column
+    Else
+        Set LastCell = Sheets(ActiveSheet.Name).Cells(RowNumber, Sheets(ActiveSheet.Name).Columns.Count).End(xlToLeft)
+        LastCellColumnNumber = LastCell.Column
+    End If
+End With
+lastc = LastCellColumnNumber
+
+sn1 = "A"
+With Sheets(ActiveSheet.Name)
+lastr = Sheets(ActiveSheet.Name).Cells(Sheets(ActiveSheet.Name).Rows.Count, sn1).End(xlUp).Row
+End With
+
+s = Mid(Sheets(j).Name, 1, 2)
+If s <> "Sh" Then
+am(j) = Trim(Str(lastr - 1))
+bm(j) = Sheets(j).Name
+t2 = t2 + am(j)
+s2 = s2 + Sheets(j).Name + "  " + Trim(Str(lastr - 1)) + Chr(13)
+
+End If
+Next j
+s2 = s2 + Chr(13) + "تعداد کل:   " + Trim(Str(t2))
+MsgBox s2
+
+
+'---
+
+'--- حذف ستون خالي
+sheetc = Sheets.Count
+If sheetc > 1 Then
+For I = 1 To sheetc
+Sheets(I).Select
+'---
+If Trim(Range("A1").Value) = "ID" Then
+Columns("A:A").Select
+Selection.Delete Shift:=xlToLeft
+End If
+'---
+
+
+Range("A1").Select
+sheetc = Sheets.Count
+If I + 1 > Sheets.Count Then Exit For
+Next I
+End If
+'---
+Application.DisplayAlerts = True
+Application.ScreenUpdating = True
+'--- save file
+If t = 100 Then
+s = "تعريف ترمينال"
+Range("A1000000").Value = "=m2s(today())"
+s2 = Range("A1000000").Value
+Range("A1000000").Value = ""
+nh = ""
+nh2 = ""
+For I = 1 To Len(s2)
+nh = Mid(s2, I, 1)
+If nh <> "/" Then nh2 = nh2 + nh
+
+Next I
+
+nh = Mid(nh2, 3, Len(nh2))
+s = s + " " + nh
+
+Application.Dialogs(xlDialogSaveAs).Show s
+Unload Me
+Else
+MsgBox "حداقل يک بانک انتخاب شود"
+End If
+'---
+
+
+End Sub
+
+Private Sub CommandButton4_Click()
+Unload Me
+
+End Sub
+
+
+
+Private Sub CommandButton5_Click()
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+sheetc = Sheets.Count
+For I = 1 To sheetc
+Sheets(I).Select
+Range("2:2").Select
+If Application.CountA(ActiveCell.EntireRow) = 0 Then
+ActiveWindow.SelectedSheets.Delete
+I = I - 1
+End If
+Range("A1").Select
+sheetc = Sheets.Count
+If I + 1 > Sheets.Count Then Exit For
+Next I
+Application.DisplayAlerts = True
+Application.ScreenUpdating = True
+Unload Me
+End Sub
+
+Private Sub UserForm_Initialize()
+UserForm233.RightToLeft = True
+
+Dim I, j, K, t, lastc, lastr As Integer
+'Application.ScreenUpdating = False
+
+On Error Resume Next
+
+For I = 1 To Sheets.Count
+s = Sheets(I).Name
+s2 = Trim(Mid(s, 1, 13))
+If s2 = "تعريف ترمينال" Then
+num = I
+End If
+    
+Next I
+
+ Sheets(num).Select
+ 
+
+
+sh = "1"
+Set ws = Worksheets(ActiveSheet.Name)
+With ws
+    I = Val(sh)
+    RowNumber = I
+
+        If Sheets(ActiveSheet.Name).Cells(RowNumber, .Columns.Count) <> vbNullString Then
+'        Set LastCell = .Cells(RowNumber, .Columns.Count)
+        Set LastCell = Sheets(ActiveSheet.Name).Cells(RowNumber, Sheets(ActiveSheet.Name).Columns.Count)
+        LastCellColumnNumber = LastCell.Column
+    Else
+        Set LastCell = Sheets(ActiveSheet.Name).Cells(RowNumber, Sheets(ActiveSheet.Name).Columns.Count).End(xlToLeft)
+        LastCellColumnNumber = LastCell.Column
+    End If
+End With
+lastc = LastCellColumnNumber
+
+sn1 = "A"
+With Sheets(ActiveSheet.Name)
+lastr = Sheets(ActiveSheet.Name).Cells(Sheets(ActiveSheet.Name).Rows.Count, sn1).End(xlUp).Row
+End With
+
+'For I = 2 To lastr
+'ComboBox2.AddItem Str(I)
+'Next I
+
+
+ComboBox2.AddItem "سامان" '0
+ComboBox2.AddItem "رفاه" '1
+ComboBox2.AddItem "سپه" '2
+ComboBox2.AddItem "صادرات" '3
+ComboBox2.AddItem "موسسه اعتباري توسعه" '4
+ComboBox2.AddItem "سايربانکها" '5
+ComboBox2.AddItem "توسعه تعاون" '6
+ComboBox2.AddItem "خاورميانه" '7
+ComboBox2.AddItem "انصار" '8
+ComboBox2.AddItem "رسالت" '9
+ComboBox2.AddItem "مسکن" '10
+ComboBox2.AddItem "کشاورزي" '11
+ComboBox2.AddItem "پرديس رفاه" '12
+ComboBox2.AddItem "بانک دي" '13
+ComboBox2.AddItem "بانک شهر" '14
+
+'ComboBox2.AddItem "SMT" '15
+'ComboBox2.AddItem "آ" + ChrW(1740) + "نده" '16
+
+'---حساب تسويه
+test = 0
+s = ""
+Sheets(ActiveSheet.Name).Select
+For I = 1 To lastc
+sh = Trim(Cells(1, I).Value)
+s = Cells(1, I).address
+s2 = s
+s = Split(s, "$")(1)
+'s = s + ":" + s
+
+If sh = "حساب تسو" + ChrW(1740) + "ه" Then
+test = 100
+
+st = s
+End If
+Next I
+
+
+If st <> "" Then
+
+
+s2 = Trim(st + Trim("2"))
+K = Range(s2).Value
+
+For I = 3 To lastr
+s2 = st + Trim(Str(I))
+If Trim(K) <> Trim(Range(s2).Value) Then
+K = "سايربانکها"
+Exit For
+Else
+K = Range(s2).Value
+End If
+
+
+Next I
+End If
+
+If Trim(K) = "سامان" Then ComboBox2.ListIndex = 0
+If Trim(K) = "بانک سامان" Then ComboBox2.ListIndex = 0
+If Trim(K) = "رفاه" Then ComboBox2.ListIndex = 1
+If Trim(K) = "بانک رفاه" Then ComboBox2.ListIndex = 1
+If Trim(K) = "سپه" Then ComboBox2.ListIndex = 2
+If Trim(K) = "بانک سپه" Then ComboBox2.ListIndex = 2
+If Trim(K) = "صادرات" Then ComboBox2.ListIndex = 3
+If Trim(K) = "بانک صادرات" Then ComboBox2.ListIndex = 3
+If Trim(K) = "صادرات " Then ComboBox2.ListIndex = 3
+If Trim(K) = "موسسه اعتباري توسعه" Then ComboBox2.ListIndex = 4
+If Trim(K) = "موسسه اعتبار" + ChrW(1740) + " توسعه" Then ComboBox2.ListIndex = 4
+If Trim(K) = "سايربانکها" Then ComboBox2.ListIndex = 5
+If Trim(K) = "ساير بانکها" Then ComboBox2.ListIndex = 5
+If Trim(K) = "توسعه تعاون" Then ComboBox2.ListIndex = 6
+If Trim(K) = "خاورميانه" Then ComboBox2.ListIndex = 7
+If Trim(K) = "خاورم" + ChrW(1740) + "انه" Then ComboBox2.ListIndex = 7
+If Trim(K) = "انصار" Then ComboBox2.ListIndex = 8
+If Trim(K) = "بانک انصار" Then ComboBox2.ListIndex = 8
+If Trim(K) = "رسالت" Then ComboBox2.ListIndex = 9
+If Trim(K) = "قرض الحسنه رسالت" Then ComboBox2.ListIndex = 9
+If Trim(K) = "مسکن" Then ComboBox2.ListIndex = 10
+If Trim(K) = "بانک مسکن" Then ComboBox2.ListIndex = 10
+If Trim(K) = "کشاورزي" Then ComboBox2.ListIndex = 11
+If Trim(K) = "بانک کشاورزي" Then ComboBox2.ListIndex = 11
+If Trim(K) = "کشاورز" + ChrW(1740) + "" Then ComboBox2.ListIndex = 11
+If Trim(K) = "بانک کشاورز" + ChrW(1740) + "" Then ComboBox2.ListIndex = 11
+If Trim(K) = "پرد" + ChrW(1740) + "س رفاه" Then ComboBox2.ListIndex = 12
+If Trim(K) = "پرديس رفاه" Then ComboBox2.ListIndex = 12
+If Trim(K) = "بانک دي" Then ComboBox2.ListIndex = 13
+If Trim(K) = "دي" Then ComboBox2.ListIndex = 13
+If Trim(K) = "د" + ChrW(1740) + "" Then ComboBox2.ListIndex = 13
+If Trim(K) = "بانک د" + ChrW(1740) + "" Then ComboBox2.ListIndex = 13
+If Trim(K) = "بانک شهر" Then ComboBox2.ListIndex = 14
+If Trim(K) = "شهر" Then ComboBox2.ListIndex = 14
+'If Trim(K) = "SMT" Then ComboBox2.ListIndex = 15
+If Trim(K) = "آ" + ChrW(1740) + "نده" Then ComboBox2.ListIndex = 16
+If Trim(K) = "ارتباط فردا" Then ComboBox2.ListIndex = 16
+
+'--- انتخاب عکس
+img_saman.Visible = False
+img_refah.Visible = False
+img_sepah.Visible = False
+img_saderat.Visible = False
+img_moasseh.Visible = False
+img_sayer.Visible = False
+img_toseeh.Visible = False
+img_khavarmianeh.Visible = False
+img_ansar.Visible = False
+img_resalat.Visible = False
+img_maskan.Visible = False
+img_keshavarzi.Visible = False
+img_day.Visible = False
+img_shahr.Visible = False
+img_ayandeh.Visible = False
+
+If ComboBox2.Value = "سامان" Then img_saman.Visible = True
+If ComboBox2.Value = "رفاه" Then img_refah.Visible = True
+If ComboBox2.Value = "سپه" Then img_sepah.Visible = True
+If ComboBox2.Value = "صادرات" Then img_saderat.Visible = True
+If ComboBox2.Value = "موسسه اعتباري توسعه" Then img_moasseh.Visible = True
+If ComboBox2.Value = "سايربانکها" Then img_sayer.Visible = True
+If ComboBox2.Value = "توسعه تعاون" Then img_toseeh.Visible = True
+If ComboBox2.Value = "خاورميانه" Then img_khavarmianeh.Visible = True
+If ComboBox2.Value = "انصار" Then img_ansar.Visible = True
+If ComboBox2.Value = "رسالت" Then img_resalat.Visible = True
+If ComboBox2.Value = "مسکن" Then img_maskan.Visible = True
+If ComboBox2.Value = "کشاورزي" Then img_keshavarzi.Visible = True
+If ComboBox2.Value = "پرديس رفاه" Then img_refah.Visible = True
+If ComboBox2.Value = "بانک دي" Then img_day.Visible = True
+If ComboBox2.Value = "بانک شهر" Then img_shahr.Visible = True
+If ComboBox2.Value = "آ" + ChrW(1740) + "نده" Then img_ayandeh.Visible = True
+'if combobox2.value = "SMT" '15
+'---
+
+s = Selection.address
+
+End Sub
+
+Sub Saman()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{2F520375-4D4F-42E4-A5BA-5093BACCAE28}" '---عبدالهي
+Const VIEWNAME As String = "{3322DB28-5C1F-45A5-8EA5-BCE3E86D9CE5}"
+strSPServer = "http://sp.sep.ir/1/saman/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+ActiveSheet.Name = "سامان"
+If CheckBox1.Value = True Then CheckBox1.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+
+End Sub
+Sub refah()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{E33F4869-CAC0-4D0B-9033-70D80495A867}"
+Const VIEWNAME As String = "{732A5996-942C-47D7-9467-AC204BFD7388}"
+strSPServer = "http://sp.sep.ir/1/refah/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+ActiveSheet.Name = "رفاه"
+If CheckBox1.Value = True Then CheckBox2.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+
+End Sub
+
+Sub sepah()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{36E12AAF-B3CC-447E-B92A-1B267A56A0D9}"
+Const VIEWNAME As String = "{3BF16A09-77D1-44BC-9D84-DDAA35629848}"
+strSPServer = "http://sp.sep.ir/1/sepah/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+ActiveSheet.Name = "سپه"
+If CheckBox1.Value = True Then CheckBox3.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+
+End Sub
+
+Sub cid()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{F1CC6196-FCF3-4CA3-B329-33EC5DB11D8F}"
+Const VIEWNAME As String = "{3DEC5201-934C-4FFE-BF4E-DCDC51B54506}"
+strSPServer = "http://sp.sep.ir/bank/project/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+ActiveSheet.Name = "مديريت پروژه هاي سپ"
+If CheckBox1.Value = True Then CheckBox4.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+
+End Sub
+
+Sub other()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{63D0C5E1-08B2-47DF-93BD-B1BD5C5803B5}"
+Const VIEWNAME As String = "{49234073-C7C2-4867-9714-DAAC6CC35D8E}"
+strSPServer = "http://sp.sep.ir/1/other/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+ActiveSheet.Name = "سايربانکها"
+If CheckBox1.Value = True Then CheckBox5.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+
+End Sub
+
+Sub ttbank()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{F483CE1A-0ECA-409B-B0C2-300F3390A70E}"
+Const VIEWNAME As String = "{17D2FBF1-A55A-4595-8277-C555C5F4B9E6}"
+strSPServer = "http://sp.sep.ir/1/ttbank/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+ActiveSheet.Name = "توسعه تعاون"
+If CheckBox1.Value = True Then CheckBox6.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+
+End Sub
+
+Sub meb()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{4F65010C-3107-4BF8-9883-C88FB5159910}"
+Const VIEWNAME As String = "{40A3A254-731C-4E7C-B96F-5CD6005A2C41}"
+strSPServer = "http://sp.sep.ir/bank/meb/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+ActiveSheet.Name = "خاورميانه"
+If CheckBox1.Value = True Then CheckBox7.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+
+End Sub
+
+Sub ansar()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{7E023D9B-A7F3-4DA0-9268-74389F1E5220}"
+Const VIEWNAME As String = "{78440513-0416-42A1-9F17-21BACF6F0DEE}"
+strSPServer = "http://sp.sep.ir/1/ansar/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+ActiveSheet.Name = "انصار"
+If CheckBox1.Value = True Then CheckBox8.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+
+End Sub
+
+
+Sub resalat()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{DDBE2A6C-A525-4620-B7CE-82A9EC2D8E73}"
+Const VIEWNAME As String = "{63D127B9-A117-400F-BA75-0785A8290BD5}"
+strSPServer = "http://sp.sep.ir/1/resalat/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+ActiveSheet.Name = "رسالت"
+If CheckBox1.Value = True Then CheckBox9.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+
+End Sub
+
+
+Sub saderat()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{25362C5E-A005-4177-ABDD-F91D0735DE3A}"
+Const VIEWNAME As String = "{59E1F6F5-6A1F-400E-B026-8745D270296B}"
+strSPServer = "http://sp.sep.ir/1/saderat/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+
+ActiveSheet.Name = "صادرات"
+If CheckBox1.Value = True Then CheckBox10.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+
+End Sub
+
+Sub maskan()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{CB7A9B02-0BED-4FB3-9D22-C099CBCB403A}"
+Const VIEWNAME As String = "{2A745E21-A7F6-437D-BFE1-B77FB72DE2C8}"
+strSPServer = "http://sp.sep.ir/bank/maskan/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+
+ActiveSheet.Name = "مسکن"
+If CheckBox1.Value = True Then CheckBox11.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+End Sub
+
+Sub keshavarzi()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{417AB951-EE07-490F-AD3A-05FF904B07D7}"
+Const VIEWNAME As String = "{858925F2-8106-40DF-A0BC-7E4AF09501D1}"
+strSPServer = "http://sp.sep.ir/bank/keshavarzi/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+
+ActiveSheet.Name = "کشاورزي"
+If CheckBox1.Value = True Then CheckBox12.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+End Sub
+
+Sub pardis()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{450FE274-7ACE-466B-91ED-C7406AF764B7}"
+Const VIEWNAME As String = "{FDE68BC9-7C12-49EA-BB8D-2D21B156DBE8}"
+strSPServer = "http://sp.sep.ir/bank/pardis/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+
+ActiveSheet.Name = "پرديس رفاه"
+If CheckBox1.Value = True Then CheckBox13.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+End Sub
+
+Sub bankday()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{BF1EE81A-6766-4231-B3B9-730DEAF89B57}"
+Const VIEWNAME As String = "{C9D4429A-8500-4659-91AA-3FA379183C2B}"
+strSPServer = "http://sp.sep.ir/bank/Day/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+
+ActiveSheet.Name = "بانک دي"
+If CheckBox1.Value = True Then CheckBox14.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+
+End Sub
+
+Sub shahr()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{5EC0797C-F26B-4EB0-B4D9-60A5DFA853B3}"
+Const VIEWNAME As String = "{C981870B-E12D-4C00-8813-7F2CF1E5204A}"
+strSPServer = "http://sp.sep.ir/bank/shahr/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+
+ActiveSheet.Name = "شهر"
+If CheckBox1.Value = True Then CheckBox15.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+End Sub
+
+Sub ertebatfarda()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{0DA7E413-AA18-4E0C-A155-6B4C8CF45BBF}"
+Const VIEWNAME As String = "{7668EEF0-3EB5-4D43-8975-C0AD7EE640CA}"
+strSPServer = "http://sp.sep.ir/bank/farda/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+
+ActiveSheet.Name = "ارتباط فردا"
+If CheckBox1.Value = True Then CheckBox15.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+End Sub
+Sub postbank()
+On Error Resume Next
+Dim objMyList As ListObject
+Dim objWksheet As Worksheet
+Dim strSPServer As String
+Const SERVER As String = "http://sp.sep.ir/"
+Const LISTNAME As String = "{5EC0797C-F26B-4EB0-B4D9-60A5DFA853B3}"
+Const VIEWNAME As String = "{DD83B379-0922-4500-AED4-32342842EE04}"
+strSPServer = "http://sp.sep.ir/bank/postbank/_vti_bin"
+
+Set objWksheet = Worksheets.Add
+Set objMyList = objWksheet.ListObjects.Add(xlSrcExternal, _
+Array(strSPServer, LISTNAME, VIEWNAME), True, , Range("a1"))
+Set objMyList = Nothing
+Set objWksheet = Nothing
+
+ActiveSheet.Name = "پست بانک"
+If CheckBox1.Value = True Then CheckBox15.Font.Bold = True
+Application.ScreenUpdating = True
+Application.ScreenUpdating = False
+If CheckBoxall.Value = False Then
+Unload Me
+End If
+End Sub
+Sub UnlinkList()
+On Error Resume Next
+Dim wrksht As Worksheet
+Dim objListObj As ListObject
+For I = 1 To Sheets.Count
+Set wrksht = ActiveWorkbook.Worksheets(I)
+Set objListObj = wrksht.ListObjects(1)
+objListObj.Unlink
+Next I
+End Sub
+
+Sub sep1()
+On Error Resume Next
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+For K = 1 To Sheets.Count
+Sheets(K).Select
+sh = "1"
+Set ws = Worksheets(ActiveSheet.Name)
+With ws
+    I = Val(sh)
+    RowNumber = I
+
+        If Sheets(ActiveSheet.Name).Cells(RowNumber, .Columns.Count) <> vbNullString Then
+'        Set LastCell = .Cells(RowNumber, .Columns.Count)
+        Set LastCell = Sheets(ActiveSheet.Name).Cells(RowNumber, Sheets(ActiveSheet.Name).Columns.Count)
+        LastCellColumnNumber = LastCell.Column
+    Else
+        Set LastCell = Sheets(ActiveSheet.Name).Cells(RowNumber, Sheets(ActiveSheet.Name).Columns.Count).End(xlToLeft)
+        LastCellColumnNumber = LastCell.Column
+    End If
+End With
+lastc = LastCellColumnNumber
+
+sn1 = "A"
+With Sheets(1)
+lastr = Sheets(ActiveSheet.Name).Cells(Sheets(ActiveSheet.Name).Rows.Count, sn1).End(xlUp).Row
+End With
+
+
+
+
+
+'--- سوئيچ
+For I = 1 To lastc
+sh = Cells(1, I).Value
+s = Cells(1, I).address
+s2 = s
+s = Split(s, "$")(1)
+s3 = s
+s = s + ":" + s
+If sh = "سوئ" + ChrW(1740) + "چ" Then
+For j = 2 To lastr
+s4 = s3 + Trim(Str(j))
+'s = Range(s4).Value
+'s = OptionButton1.Caption
+op = Range(s4).Value
+If Mid(op, 1, 1) = "S" Then
+op = "s" + Mid(op, 2, Len(op))
+End If
+
+If OptionButton1.Value = True Then
+If op = OptionButton2.Caption Then
+s = Trim(Str(j)) + ":" + Trim(Str(j))
+Rows(s).Select
+Selection.Delete Shift:=xlUp
+j = j - 1
+End If
+End If
+
+
+If OptionButton2.Value = True Then
+If op = OptionButton1.Caption Then
+s = Trim(Str(j)) + ":" + Trim(Str(j))
+Rows(s).Select
+Selection.Delete Shift:=xlUp
+Range("A1").Select
+j = j - 1
+End If
+End If
+
+Next j
+End If
+Next I
+Next K
+
+
+'--- حذف موارد خالي
+sheetc = Sheets.Count
+For I = 1 To sheetc
+Sheets(I).Select
+'---
+If Trim(Range("A1").Value) = "ID" Then
+Columns("A:A").Select
+Selection.Delete Shift:=xlToLeft
+End If
+'---
+Range("2:2").Select
+If I + 1 <> sheetc Then
+If Application.CountA(ActiveCell.EntireRow) = 0 Then
+ActiveWindow.SelectedSheets.Delete
+End If
+I = I - 1
+End If
+   
+
+Range("A1").Select
+sheetc = Sheets.Count
+If I + 1 > Sheets.Count Then Exit For
+Next I
+'---
+
+
+Application.DisplayAlerts = True
+Application.ScreenUpdating = True
+End Sub
+
+
+==================== Module4 195
+Attribute VB_Name = "Module4"
+Function Exi() As String
+On Error Resume Next
+UserForm233.Show
+End Function
+Function tabaghe() As String
+On Error Resume Next
+UserForm1.Show
+End Function
+
+
+==================== Module5 22799
+Attribute VB_Name = "Module5"
+
+Private Function Ceil(Number As Single) As Long
+    Ceil = -Sgn(Number) * Int(-Abs(Number))
+End Function
+Function persian_jdn(iYear, iMonth, iDay)
+    Const PERSIAN_EPOCH = 1948321 ' The JDN of 1 Farvardin 1
+    Dim epbase As Long
+    Dim epyear As Long
+    Dim mdays As Long
+    If iYear >= 0 Then
+        epbase = iYear - 474
+    Else
+        epbase = iYear - 473
+    End If
+    epyear = 474 + (epbase Mod 2820)
+    If iMonth <= 7 Then
+        mdays = (CLng(iMonth) - 1) * 31
+    Else
+        mdays = (CLng(iMonth) - 1) * 30 + 6
+    End If
+    persian_jdn = CLng(iDay) _
+            + mdays _
+            + Fix(((epyear * 682) - 110) / 2816) _
+            + (epyear - 1) * 365 _
+            + Fix(epbase / 2820) * 1029983 _
+            + (PERSIAN_EPOCH - 1)
+End Function
+Sub jdn_persian(jdn, iYear, iMonth, iDay)
+    Dim depoch
+    Dim cycle
+    Dim cyear
+    Dim ycycle
+    Dim aux1, aux2
+    Dim yday
+    depoch = jdn - persian_jdn(475, 1, 1)
+    cycle = Fix(depoch / 1029983)
+    cyear = depoch Mod 1029983
+    If cyear = 1029982 Then
+        ycycle = 2820
+    Else
+        aux1 = Fix(cyear / 366)
+        aux2 = cyear Mod 366
+        ycycle = Int(((2134 * aux1) + (2816 * aux2) + 2815) / 1028522) + aux1 + 1
+    End If
+    iYear = ycycle + (2820 * cycle) + 474
+    If iYear <= 0 Then
+        iYear = iYear - 1
+    End If
+    yday = (jdn - persian_jdn(iYear, 1, 1)) + 1
+    If yday <= 186 Then
+        iMonth = Ceil(yday / 31)
+    Else
+        iMonth = Ceil((yday - 6) / 30)
+    End If
+    iDay = (jdn - persian_jdn(iYear, iMonth, 1)) + 1
+End Sub
+Function civil_jdn(ByVal iYear, ByVal iMonth, ByVal iDay)
+    Dim lYear
+    Dim lMonth
+    Dim lDay
+    Dim calendatType
+    calendarType = Gregorian
+    If calendarType = Gregorian And ((iYear > 1582) _
+        Or ((iYear = 1582) And (iMonth > 10)) _
+        Or ((iYear = 1582) And (iMonth = 10) And (iDay > 14))) Then
+
+        lYear = CLng(iYear)
+        lMonth = CLng(iMonth)
+        lDay = CLng(iDay)
+        civil_jdn = ((1461 * (lYear + 4800 + ((lMonth - 14) \ 12))) \ 4) _
+                + ((367 * (lMonth - 2 - 12 * (((lMonth - 14) \ 12)))) \ 12) _
+                - ((3 * (((lYear + 4900 + ((lMonth - 14) \ 12)) \ 100))) \ 4) _
+                + lDay - 32075
+    Else
+        civil_jdn = julian_jdn(iYear, iMonth, iDay)
+    End If
+
+End Function
+Sub jdn_julian(jdn, iYear, iMonth, iDay)
+    Dim L As Long
+    Dim K As Long
+    Dim n As Long
+    Dim I As Long
+    Dim j As Long
+
+    j = jdn + 1402
+    K = ((j - 1) \ 1461)
+    L = j - 1461 * K
+    n = ((L - 1) \ 365) - (L \ 1461)
+    I = L - 365 * n + 30
+    j = ((80 * I) \ 2447)
+    iDay = I - ((2447 * j) \ 80)
+    I = (j \ 11)
+    iMonth = j + 2 - 12 * I
+    iYear = 4 * K + n + I - 4716
+
+End Sub
+Function julian_jdn(iYear, iMonth, iDay) As Long
+   
+    julian_jdn = 367 * lYear - _
+            ((7 * (lYear + 5001 + ((lMonth - 9) \ 7))) \ 4) _
+            + ((275 * lMonth) \ 9) + lDay + 1729777
+
+End Function
+Sub jdn_civil(jdn, iYear, iMonth, iDay)
+
+    Dim L
+    Dim K
+    Dim n
+    Dim I
+    Dim j
+
+    If (jdn > 2299160) Then
+        L = jdn + 68569
+        n = ((4 * L) \ 146097)
+        L = L - ((146097 * n + 3) \ 4)
+        I = ((4000 * (L + 1)) \ 1461001)
+        L = L - ((1461 * I) \ 4) + 31
+        j = ((80 * L) \ 2447)
+        iDay = L - ((2447 * j) \ 80)
+        L = (j \ 11)
+        iMonth = j + 2 - 12 * L
+        iYear = 100 * (n - 49) + I + L
+    Else
+        Call jdn_julian(jdn, iYear, iMonth, iDay)
+    End If
+
+End Sub
+
+
+'Function m2s(myDate)
+'    iDay = Day(myDate)
+'    iMonth = Month(myDate)
+'    iYear = Year(myDate)
+'    jdn = civil_jdn(iYear, iMonth, iDay)
+'    Call jdn_persian(jdn, iYear, iMonth, iDay)
+'    m2s = iYear & "/" & iMonth & "/" & iDay
+'End Function
+
+Function s2m(myDate)
+   Dim iYear, iMonth, iDay
+    For I = 1 To Len(myDate)
+        st = Mid(myDate, I, 1)
+        
+        If (st = "/" Or st = "-" Or st = "." Or st = "\") And X <> 1 Then
+                X = 1
+                If I = 3 Then s = "13" & s
+        Else
+                If (st = "/" Or st = "-" Or st = "." Or st = "\") And X = 1 Then
+                    X = 2
+                    If I = 5 Or I = 7 Then s = Left(s, Len(s) - 1) & "0" & Right(s, 1)
+                Else
+                    s = s & st
+                End If
+       End If
+     Next
+        If Len(s) = 7 Then s = Left(s, 6) & "0" & Right(s, 1)
+    myDate = s
+    iYear = Mid(myDate, 1, 4)
+    iMonth = Mid(myDate, 5, 2)
+    iDay = Mid(myDate, 7, 2)
+    If (iDay > 30 And iMonth > 6) Or iDay > 31 Or iMonth > 12 Then s2m = "Error": Exit Function
+    
+    If (iDay = 30 And iMonth = 12) Then
+    iYear1 = iYear + 1
+    iMonth1 = 1
+    iDay1 = 1
+    jdn1 = persian_jdn(iYear1, iMonth1, iDay1)
+    jdn = persian_jdn(iYear, iMonth, iDay)
+    If jdn1 = jdn Then s2m = "Error": Exit Function
+    End If
+    
+    jdn = persian_jdn(iYear, iMonth, iDay)
+    Call jdn_civil(jdn, iYear, iMonth, iDay)
+    s2m = iYear & "/" & iMonth & "/" & iDay
+End Function
+
+Function m2s(myDate, Optional Format = 0)
+    iDay = day(myDate)
+    iMonth = Month(myDate)
+    iYear = Year(myDate)
+    iWeekday = Weekday(myDate)
+    Dim m, d, y As Integer
+    Dim m1, d1, y1 As String
+    jdn = civil_jdn(iYear, iMonth, iDay)
+    Call jdn_persian(jdn, iYear, iMonth, iDay)
+    
+    Select Case iWeekday
+    Case 1
+        rooz = ChrW(1740) & ChrW(1705) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 2
+        rooz = ChrW(1583) & ChrW(1608) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 3
+        rooz = ChrW(1587) & ChrW(1607) & ChrW(8204) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 4
+        rooz = ChrW(1670) & ChrW(1607) & ChrW(1575) & ChrW(1585) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 5
+        rooz = ChrW(1662) & ChrW(1606) & ChrW(1580) & ChrW(8204) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 6
+        rooz = ChrW(1580) & ChrW(1605) & ChrW(1593) & ChrW(1607)
+    Case 7
+        rooz = ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    End Select
+    
+   
+   Select Case iMonth
+    
+    Case 1
+        mah = ChrW(1601) & ChrW(1585) & ChrW(1608) & ChrW(1585) & ChrW(1583) & ChrW(1740) & ChrW(1606)
+    Case 2
+        mah = ChrW(1575) & ChrW(1585) & ChrW(1583) & ChrW(1740) & ChrW(1576) & ChrW(1607) & ChrW(1588) & ChrW(1578)
+    Case 3
+        mah = ChrW(1582) & ChrW(1585) & ChrW(1583) & ChrW(1575) & ChrW(1583)
+    Case 4
+        mah = ChrW(1578) & ChrW(1740) & ChrW(1585)
+    Case 5
+        mah = ChrW(1605) & ChrW(1585) & ChrW(1583) & ChrW(1575) & ChrW(1583)
+    Case 6
+        mah = ChrW(1588) & ChrW(1607) & ChrW(1585) & ChrW(1740) & ChrW(1608) & ChrW(1585)
+    Case 7
+        mah = ChrW(1605) & ChrW(1607) & ChrW(1585)
+    Case 8
+        mah = ChrW(1570) & ChrW(1576) & ChrW(1575) & ChrW(1606)
+    Case 9
+        mah = ChrW(1570) & ChrW(1584) & ChrW(1585)
+    Case 10
+        mah = ChrW(1583) & ChrW(1740)
+    Case 11
+        mah = ChrW(1576) & ChrW(1607) & ChrW(1605) & ChrW(1606)
+    Case 12
+        mah = ChrW(1575) & ChrW(1587) & ChrW(1601) & ChrW(1606) & ChrW(1583)
+       
+    End Select
+
+    Select Case Format
+    
+    Case 1
+            m2s = rooz & "," & iYear & "/" & iMonth & "/" & iDay
+    Case 2
+        m2s = rooz & " " & horofi(iDay) & " " & mah & " " & ChrW(1605) & ChrW(1575) & ChrW(1607) & " " & horofi(iYear)
+    Case 3
+        m2s = iYear
+    Case 4
+        m2s = iMonth
+    Case 5
+        m2s = iDay
+    Case 0
+        '==================================================================== h.noori در دست تغيير
+        m1 = Trim(Str(iMonth))
+        y1 = Trim(Str(iYear))
+        d1 = Trim(Str(iDay))
+        If Len(m1) = 1 Then m1 = "0" & m1
+        If Len(d1) = 1 Then d1 = "0" & d1
+        
+        m2s = y1 & "/" & m1 & "/" & d1
+    Case Else
+        m2s = "Only one of this number as format(0,1,2,3,4,5)"
+    End Select
+    
+End Function
+
+
+Function hafteh(myDate, Optional Format = 0)
+    iDay = day(myDate)
+    iMonth = Month(myDate)
+    iYear = Year(myDate)
+    iWeekday = Weekday(myDate)
+    Dim m, d, y As Integer
+    Dim m1, d1, y1, m2s As String
+    jdn = civil_jdn(iYear, iMonth, iDay)
+    Call jdn_persian(jdn, iYear, iMonth, iDay)
+    
+    Select Case iWeekday
+    Case 1
+        rooz = ChrW(1740) & ChrW(1705) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 2
+        rooz = ChrW(1583) & ChrW(1608) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 3
+        rooz = ChrW(1587) & ChrW(1607) & ChrW(8204) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 4
+        rooz = ChrW(1670) & ChrW(1607) & ChrW(1575) & ChrW(1585) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 5
+        rooz = ChrW(1662) & ChrW(1606) & ChrW(1580) & ChrW(8204) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 6
+        rooz = ChrW(1580) & ChrW(1605) & ChrW(1593) & ChrW(1607)
+    Case 7
+        rooz = ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    End Select
+    
+   
+   Select Case iMonth
+    
+    Case 1
+        mah = ChrW(1601) & ChrW(1585) & ChrW(1608) & ChrW(1585) & ChrW(1583) & ChrW(1740) & ChrW(1606)
+    Case 2
+        mah = ChrW(1575) & ChrW(1585) & ChrW(1583) & ChrW(1740) & ChrW(1576) & ChrW(1607) & ChrW(1588) & ChrW(1578)
+    Case 3
+        mah = ChrW(1582) & ChrW(1585) & ChrW(1583) & ChrW(1575) & ChrW(1583)
+    Case 4
+        mah = ChrW(1578) & ChrW(1740) & ChrW(1585)
+    Case 5
+        mah = ChrW(1605) & ChrW(1585) & ChrW(1583) & ChrW(1575) & ChrW(1583)
+    Case 6
+        mah = ChrW(1588) & ChrW(1607) & ChrW(1585) & ChrW(1740) & ChrW(1608) & ChrW(1585)
+    Case 7
+        mah = ChrW(1605) & ChrW(1607) & ChrW(1585)
+    Case 8
+        mah = ChrW(1570) & ChrW(1576) & ChrW(1575) & ChrW(1606)
+    Case 9
+        mah = ChrW(1570) & ChrW(1584) & ChrW(1585)
+    Case 10
+        mah = ChrW(1583) & ChrW(1740)
+    Case 11
+        mah = ChrW(1576) & ChrW(1607) & ChrW(1605) & ChrW(1606)
+    Case 12
+        mah = ChrW(1575) & ChrW(1587) & ChrW(1601) & ChrW(1606) & ChrW(1583)
+       
+    End Select
+
+    Select Case Format
+    
+    Case 1
+            m2s = rooz & "," & iYear & "/" & iMonth & "/" & iDay
+    Case 2
+        m2s = rooz & " " & horofi(iDay) & " " & mah & " " & ChrW(1605) & ChrW(1575) & ChrW(1607) & " " & horofi(iYear)
+    Case 3
+        m2s = iYear
+    Case 4
+        m2s = iMonth
+    Case 5
+        m2s = iDay
+    Case 0
+        '==================================================================== h.noori در دست تغيير
+        m1 = Trim(Str(iMonth))
+        y1 = Trim(Str(iYear))
+        d1 = Trim(Str(iDay))
+        If Len(m1) = 1 Then m1 = "0" & m1
+        If Len(d1) = 1 Then d1 = "0" & d1
+        
+        m2s = y1 & "/" & m1 & "/" & d1
+    Case Else
+        m2s = "Only one of this number as format(0,1,2,3,4,5)"
+    End Select
+    hafteh = rooz
+End Function
+
+Function mahe(myDate, Optional Format = 0)
+    iDay = day(myDate)
+    iMonth = Month(myDate)
+    iYear = Year(myDate)
+    iWeekday = Weekday(myDate)
+    Dim m, d, y As Integer
+    Dim m1, d1, y1, m2s As String
+    jdn = civil_jdn(iYear, iMonth, iDay)
+    Call jdn_persian(jdn, iYear, iMonth, iDay)
+    
+    Select Case iWeekday
+    Case 1
+        rooz = ChrW(1740) & ChrW(1705) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 2
+        rooz = ChrW(1583) & ChrW(1608) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 3
+        rooz = ChrW(1587) & ChrW(1607) & ChrW(8204) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 4
+        rooz = ChrW(1670) & ChrW(1607) & ChrW(1575) & ChrW(1585) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 5
+        rooz = ChrW(1662) & ChrW(1606) & ChrW(1580) & ChrW(8204) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 6
+        rooz = ChrW(1580) & ChrW(1605) & ChrW(1593) & ChrW(1607)
+    Case 7
+        rooz = ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    End Select
+    
+   
+   Select Case iMonth
+    
+    Case 1
+        mah = ChrW(1601) & ChrW(1585) & ChrW(1608) & ChrW(1585) & ChrW(1583) & ChrW(1740) & ChrW(1606)
+    Case 2
+        mah = ChrW(1575) & ChrW(1585) & ChrW(1583) & ChrW(1740) & ChrW(1576) & ChrW(1607) & ChrW(1588) & ChrW(1578)
+    Case 3
+        mah = ChrW(1582) & ChrW(1585) & ChrW(1583) & ChrW(1575) & ChrW(1583)
+    Case 4
+        mah = ChrW(1578) & ChrW(1740) & ChrW(1585)
+    Case 5
+        mah = ChrW(1605) & ChrW(1585) & ChrW(1583) & ChrW(1575) & ChrW(1583)
+    Case 6
+        mah = ChrW(1588) & ChrW(1607) & ChrW(1585) & ChrW(1740) & ChrW(1608) & ChrW(1585)
+    Case 7
+        mah = ChrW(1605) & ChrW(1607) & ChrW(1585)
+    Case 8
+        mah = ChrW(1570) & ChrW(1576) & ChrW(1575) & ChrW(1606)
+    Case 9
+        mah = ChrW(1570) & ChrW(1584) & ChrW(1585)
+    Case 10
+        mah = ChrW(1583) & ChrW(1740)
+    Case 11
+        mah = ChrW(1576) & ChrW(1607) & ChrW(1605) & ChrW(1606)
+    Case 12
+        mah = ChrW(1575) & ChrW(1587) & ChrW(1601) & ChrW(1606) & ChrW(1583)
+       
+    End Select
+
+    Select Case Format
+    
+    Case 1
+            m2s = rooz & "," & iYear & "/" & iMonth & "/" & iDay
+    Case 2
+        m2s = rooz & " " & horofi(iDay) & " " & mah & " " & ChrW(1605) & ChrW(1575) & ChrW(1607) & " " & horofi(iYear)
+    Case 3
+        m2s = iYear
+    Case 4
+        m2s = iMonth
+    Case 5
+        m2s = iDay
+    Case 0
+        '==================================================================== h.noori در دست تغيير
+        m1 = Trim(Str(iMonth))
+        y1 = Trim(Str(iYear))
+        d1 = Trim(Str(iDay))
+        If Len(m1) = 1 Then m1 = "0" & m1
+        If Len(d1) = 1 Then d1 = "0" & d1
+        
+        m2s = y1 & "/" & m1 & "/" & d1
+    Case Else
+        m2s = "Only one of this number as format(0,1,2,3,4,5)"
+    End Select
+    mahe = mah
+End Function
+
+Function roz(myDate, Optional Format = 0)
+    iDay = day(myDate)
+    iMonth = Month(myDate)
+    iYear = Year(myDate)
+    iWeekday = Weekday(myDate)
+    Dim m, d, y As Integer
+    Dim m1, d1, y1, m2s As String
+    jdn = civil_jdn(iYear, iMonth, iDay)
+    Call jdn_persian(jdn, iYear, iMonth, iDay)
+    
+    Select Case iWeekday
+    Case 1
+        rooz = ChrW(1740) & ChrW(1705) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 2
+        rooz = ChrW(1583) & ChrW(1608) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 3
+        rooz = ChrW(1587) & ChrW(1607) & ChrW(8204) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 4
+        rooz = ChrW(1670) & ChrW(1607) & ChrW(1575) & ChrW(1585) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 5
+        rooz = ChrW(1662) & ChrW(1606) & ChrW(1580) & ChrW(8204) & ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    Case 6
+        rooz = ChrW(1580) & ChrW(1605) & ChrW(1593) & ChrW(1607)
+    Case 7
+        rooz = ChrW(1588) & ChrW(1606) & ChrW(1576) & ChrW(1607)
+    End Select
+    
+   
+   Select Case iMonth
+    
+    Case 1
+        mah = ChrW(1601) & ChrW(1585) & ChrW(1608) & ChrW(1585) & ChrW(1583) & ChrW(1740) & ChrW(1606)
+    Case 2
+        mah = ChrW(1575) & ChrW(1585) & ChrW(1583) & ChrW(1740) & ChrW(1576) & ChrW(1607) & ChrW(1588) & ChrW(1578)
+    Case 3
+        mah = ChrW(1582) & ChrW(1585) & ChrW(1583) & ChrW(1575) & ChrW(1583)
+    Case 4
+        mah = ChrW(1578) & ChrW(1740) & ChrW(1585)
+    Case 5
+        mah = ChrW(1605) & ChrW(1585) & ChrW(1583) & ChrW(1575) & ChrW(1583)
+    Case 6
+        mah = ChrW(1588) & ChrW(1607) & ChrW(1585) & ChrW(1740) & ChrW(1608) & ChrW(1585)
+    Case 7
+        mah = ChrW(1605) & ChrW(1607) & ChrW(1585)
+    Case 8
+        mah = ChrW(1570) & ChrW(1576) & ChrW(1575) & ChrW(1606)
+    Case 9
+        mah = ChrW(1570) & ChrW(1584) & ChrW(1585)
+    Case 10
+        mah = ChrW(1583) & ChrW(1740)
+    Case 11
+        mah = ChrW(1576) & ChrW(1607) & ChrW(1605) & ChrW(1606)
+    Case 12
+        mah = ChrW(1575) & ChrW(1587) & ChrW(1601) & ChrW(1606) & ChrW(1583)
+       
+    End Select
+
+    Select Case Format
+    
+    Case 1
+            m2s = rooz & "," & iYear & "/" & iMonth & "/" & iDay
+    Case 2
+        m2s = rooz & " " & horofi(iDay) & " " & mah & " " & ChrW(1605) & ChrW(1575) & ChrW(1607) & " " & horofi(iYear)
+    Case 3
+        m2s = iYear
+    Case 4
+        m2s = iMonth
+    Case 5
+        m2s = iDay
+    Case 0
+        '==================================================================== h.noori در دست تغيير
+        m1 = Trim(Str(iMonth))
+        y1 = Trim(Str(iYear))
+        d1 = Trim(Str(iDay))
+        If Len(m1) = 1 Then m1 = "0" & m1
+        If Len(d1) = 1 Then d1 = "0" & d1
+        
+        m2s = y1 & "/" & m1 & "/" & d1
+    Case Else
+        m2s = "Only one of this number as format(0,1,2,3,4,5)"
+    End Select
+    roz = iDay
+End Function
+
+
+Function horofi(ByVal Number As Double) As String
+Number = Int(Number)
+If Number = 0 Then Adad = ChrW(1589) & ChrW(1601) & ChrW(1585): Exit Function
+
+Dim Flag As Boolean
+Dim s As String
+Dim I, L As Byte
+Dim K(1 To 5) As Double
+
+s = Trim(Str(Number))
+L = Len(s)
+If L > 15 Then
+Adad = ChrW(1576) & ChrW(1587) & ChrW(1610) & ChrW(1575) & ChrW(1585) & ChrW(1576) & ChrW(1586) & ChrW(1585) & ChrW(1711) & " "
+Exit Function
+End If
+For I = 1 To 15 - L
+s = "0" & s
+Next I
+For I = 1 To Int((L / 3) + 0.99)
+K(5 - I + 1) = Val(Mid(s, 3 * (5 - I) + 1, 3))
+Next I
+Flag = False
+s = " "
+For I = 1 To 5
+If K(I) <> 0 Then
+Select Case I
+Case 1
+s = s & Three(K(I)) & " " & ChrW(1578) & ChrW(1585) & ChrW(1610) & ChrW(1604) & ChrW(1610) & ChrW(1608) & ChrW(1606) & " "
+Flag = True
+Case 2
+s = s & IIf(Flag = True, ChrW(1608), " ") & Three(K(I)) & " " & ChrW(1605) & ChrW(1610) & ChrW(1604) & ChrW(1610) & ChrW(1575) & ChrW(1585) & ChrW(1583) & " "
+Flag = True
+Case 3
+s = s & IIf(Flag = True, ChrW(1608), " ") & Three(K(I)) & " " & ChrW(1605) & ChrW(1610) & ChrW(1604) & ChrW(1610) & ChrW(1608) & ChrW(1606) & " "
+Flag = True
+Case 4
+s = s & IIf(Flag = True, ChrW(1608), " ") & Three(K(I)) & " " & ChrW(1607) & ChrW(1586) & ChrW(1575) & ChrW(1585) & " "
+Flag = True
+Case 5
+s = s & IIf(Flag = True, ChrW(1608), " ") & Three(K(I)) & " "
+End Select
+End If
+Next I
+horofi = Trim(s)
+End Function
+
+
+Function Three(ByVal Number As Integer) As String
+Dim s As String
+Dim I, L As Long
+Dim h(1 To 3) As Byte
+Dim Flag As Boolean
+L = Len(Trim(Str(Number)))
+If Number = 0 Then
+Three = " "
+Exit Function
+End If
+If Number = 100 Then
+Three = ChrW(1610) & ChrW(1603) & ChrW(1589) & ChrW(1583) & " "
+Exit Function
+End If
+
+If L = 2 Then h(1) = 0
+If L = 1 Then
+h(1) = 0
+h(2) = 0
+End If
+
+For I = 1 To L
+h(3 - I + 1) = Mid(Trim(Str(Number)), L - I + 1, 1)
+Next I
+
+Select Case h(1)
+Case 1
+s = " " & ChrW(1610) & ChrW(1603) & ChrW(1589) & ChrW(1583) & " "
+Case 2
+s = " " & ChrW(1583) & ChrW(1608) & ChrW(1610) & ChrW(1587) & ChrW(1578) & " "
+Case 3
+s = " " & ChrW(1587) & ChrW(1610) & ChrW(1589) & ChrW(1583) & " "
+Case 4
+s = " " & ChrW(1670) & ChrW(1607) & ChrW(1575) & ChrW(1585) & ChrW(1589) & ChrW(1583) & " "
+Case 5
+s = " " & ChrW(1662) & ChrW(1575) & ChrW(1606) & ChrW(1589) & ChrW(1583) & " "
+Case 6
+s = " " & ChrW(1588) & ChrW(1588) & ChrW(1589) & ChrW(1583) & " "
+Case 7
+s = " " & ChrW(1607) & ChrW(1601) & ChrW(1578) & ChrW(1589) & ChrW(1583) & " "
+Case 8
+s = " " & ChrW(1607) & ChrW(1588) & ChrW(1578) & ChrW(1589) & ChrW(1583) & " "
+Case 9
+s = " " & ChrW(1606) & ChrW(1607) & ChrW(1589) & ChrW(1583) & " "
+End Select
+
+Select Case h(2)
+Case 1
+Select Case h(3)
+Case 0
+s = s & ChrW(1608) & " " & ChrW(1583) & ChrW(1607) & "  "
+Case 1
+s = s & ChrW(1608) & " " & ChrW(1610) & ChrW(1575) & ChrW(1586) & ChrW(1583) & ChrW(1607) & " "
+Case 2
+s = s & ChrW(1608) & " " & ChrW(1583) & ChrW(1608) & ChrW(1575) & ChrW(1586) & ChrW(1583) & ChrW(1607) & " "
+Case 3
+s = s & ChrW(1608) & " " & ChrW(1587) & ChrW(1610) & ChrW(1586) & ChrW(1583) & ChrW(1607) & " "
+Case 4
+s = s & ChrW(1608) & " " & ChrW(1670) & ChrW(1607) & ChrW(1575) & ChrW(1585) & ChrW(1583) & ChrW(1607) & " "
+Case 5
+s = s & ChrW(1608) & " " & ChrW(1662) & ChrW(1575) & ChrW(1606) & ChrW(1586) & ChrW(1583) & ChrW(1607) & " "
+Case 6
+s = s & ChrW(1608) & " " & ChrW(1588) & ChrW(1575) & ChrW(1606) & ChrW(1586) & ChrW(1583) & ChrW(1607) & " "
+Case 7
+s = s & ChrW(1608) & " " & ChrW(1607) & ChrW(1601) & ChrW(1583) & ChrW(1607) & " "
+Case 8
+s = s & ChrW(1608) & " " & ChrW(1607) & ChrW(1580) & ChrW(1583) & ChrW(1607) & " "
+Case 9
+s = s & ChrW(1608) & " " & ChrW(1606) & ChrW(1608) & ChrW(1586) & ChrW(1583) & ChrW(1607) & " "
+End Select
+
+Case 2
+s = s & ChrW(1608) & " " & ChrW(1576) & ChrW(1610) & ChrW(1587) & ChrW(1578) & " "
+Case 3
+s = s & ChrW(1608) & " " & ChrW(1587) & ChrW(1610) & " "
+Case 4
+s = s & ChrW(1608) & " " & ChrW(1670) & ChrW(1607) & ChrW(1604) & " "
+Case 5
+s = s & ChrW(1608) & " " & ChrW(1662) & ChrW(1606) & ChrW(1580) & ChrW(1575) & ChrW(1607) & " "
+Case 6
+s = s & ChrW(1608) & " " & ChrW(1588) & ChrW(1589) & ChrW(1578) & " "
+Case 7
+s = s & ChrW(1608) & " " & ChrW(1607) & ChrW(1601) & ChrW(1578) & ChrW(1575) & ChrW(1583) & " "
+Case 8
+s = s & ChrW(1608) & " " & ChrW(1607) & ChrW(1588) & ChrW(1578) & ChrW(1575) & ChrW(1583) & " "
+Case 9
+s = s & ChrW(1608) & " " & ChrW(1606) & ChrW(1608) & ChrW(1583) & " "
+End Select
+
+If h(2) <> 1 Then
+Select Case h(3)
+Case 1
+s = s & ChrW(1608) & " " & ChrW(1610) & ChrW(1603)
+Case 2
+s = s & ChrW(1608) & " " & ChrW(1583) & ChrW(1608)
+Case 3
+s = s & ChrW(1608) & " " & ChrW(1587) & ChrW(1607)
+Case 4
+s = s & ChrW(1608) & " " & ChrW(1670) & ChrW(1607) & ChrW(1575) & ChrW(1585)
+Case 5
+s = s & ChrW(1608) & " " & ChrW(1662) & ChrW(1606) & ChrW(1580)
+Case 6
+s = s & ChrW(1608) & " " & ChrW(1588) & ChrW(1588)
+Case 7
+s = s & ChrW(1608) & " " & ChrW(1607) & ChrW(1601) & ChrW(1578)
+Case 8
+s = s & ChrW(1608) & " " & ChrW(1607) & ChrW(1588) & ChrW(1578)
+Case 9
+s = s & ChrW(1608) & " " & ChrW(1606) & ChrW(1607)
+End Select
+End If
+s = IIf(L < 3, Right(s, Len(s) - 1), s)
+Three = s
+End Function
+
+     Sub Delete_Every_Named_Range_With_A_Reference_Error()
+         Dim nm As Object
+         Dim mystr As String
+
+         ' Loops through each name in the active workbook.
+         For Each nm In ActiveWorkbook.Names
+
+            ' Check for #REF! in the defined name reference.
+            If InStr(1, nm.RefersTo, "#REF!") Then
+
+               ' Delete the defined name if it is a match.
+               nm.Delete
+
+            End If
+         Next
+      End Sub
+
+
+
